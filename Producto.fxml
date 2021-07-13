@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="474.0" prefWidth="704.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.ProductoController">
+   <children>
+      <TextField fx:id="te" layoutX="71.0" layoutY="60.0" />
+      <TableView fx:id="Table" layoutX="20.0" layoutY="225.0" prefHeight="224.0" prefWidth="647.0">
+        <columns>
+          <TableColumn fx:id="cp" prefWidth="204.0" text="Producto" />
+          <TableColumn fx:id="ce" prefWidth="190.0" text="Proveedor" />
+            <TableColumn fx:id="ct" prefWidth="252.0" text="Telefono" />
+        </columns>
+         <contextMenu>
+            <ContextMenu fx:id="conmenu">
+              <items>
+                <MenuItem fx:id="m1" mnemonicParsing="false" onAction="#mostrar" text="Mostrar Producto" />
+                  <MenuItem fx:id="m2" mnemonicParsing="false" onAction="#agregar" text="Agregar Producto" />
+                  <MenuItem fx:id="m3" mnemonicParsing="false" onAction="#listar" text="Listar" />
+                  <MenuItem fx:id="m4" mnemonicParsing="false" onAction="#eliminar" text="Eliminar Producto" />
+                  <MenuItem fx:id="m5" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </TableView>
+      <TextField fx:id="ta" layoutX="72.0" layoutY="185.0" />
+      <TextField fx:id="tf" layoutX="71.0" layoutY="102.0" />
+      <TextField fx:id="tm" layoutX="72.0" layoutY="145.0" />
+      <Label layoutX="14.0" layoutY="66.0" text="Enero" />
+      <Label layoutX="15.0" layoutY="106.0" text="Febrero" />
+      <Label layoutX="18.0" layoutY="149.0" text="Marzo" />
+      <Label layoutX="18.0" layoutY="187.0" text="Abril" />
+      <Label layoutX="242.0" layoutY="184.0" text="Agosto" />
+      <Label layoutX="242.0" layoutY="146.0" text="Julio" />
+      <Label layoutX="241.0" layoutY="103.0" text="Junio" />
+      <Label layoutX="241.0" layoutY="63.0" text="Mayo" />
+      <TextField fx:id="tjj" layoutX="290.0" layoutY="142.0" />
+      <TextField fx:id="tj" layoutX="290.0" layoutY="99.0" />
+      <TextField fx:id="tag" layoutX="290.0" layoutY="182.0" />
+      <TextField fx:id="tmm" layoutX="290.0" layoutY="57.0" />
+      <TextField fx:id="ts" layoutX="519.0" layoutY="57.0" />
+      <TextField fx:id="td" layoutX="521.0" layoutY="182.0" />
+      <TextField fx:id="to" layoutX="519.0" layoutY="99.0" />
+      <TextField fx:id="tn" layoutX="520.0" layoutY="142.0" />
+      <Label layoutX="453.0" layoutY="63.0" text="Septiembre" />
+      <Label layoutX="454.0" layoutY="103.0" text="Octubre" />
+      <Label layoutX="457.0" layoutY="146.0" text="Noviembre" />
+      <Label layoutX="457.0" layoutY="184.0" text="Diciembre" />
+      <Label layoutX="12.0" layoutY="16.0" text="Producto:" />
+      <TextField fx:id="tp" layoutX="70.0" layoutY="12.0" />
+      <Label layoutX="240.0" layoutY="16.0" text="Proveedor" />
+      <ComboBox fx:id="cbox" layoutX="311.0" layoutY="14.0" prefHeight="25.0" prefWidth="129.0" />
+      <Button fx:id="save" layoutX="450.0" layoutY="17.0" mnemonicParsing="false" onAction="#save" prefHeight="25.0" prefWidth="24.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/Save_24x24.png" />
+               </source>
+            </ImageInput>
+         </effect></Button>
+   </children>
+</AnchorPane>

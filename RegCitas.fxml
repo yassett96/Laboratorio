@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import Validaciones.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="289.0" prefWidth="604.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.RegCitas">
+   <children>
+      <TableView fx:id="tableexa" layoutX="17.0" layoutY="57.0" prefHeight="219.0" prefWidth="567.0">
+         <columns>
+            <TableColumn fx:id="columnoe" prefWidth="122.0" text="No. Expediente" />
+            <TableColumn fx:id="columnom" prefWidth="165.0" text="Nombre" />
+            <TableColumn fx:id="columtipo" prefWidth="162.0" text="Tipo de Examen" />
+            <TableColumn fx:id="columestado" prefWidth="117.0" text="Estado" />
+         </columns>
+         <contextMenu>
+            <ContextMenu fx:id="conmenu">
+               <items>
+                  <MenuItem fx:id="menmos" mnemonicParsing="false" onAction="#add" text="Agregar Cita" />
+                  <MenuItem fx:id="menmodi" mnemonicParsing="false" onAction="#cancel" text="Cancelar" />
+                  <MenuItem fx:id="meneli" mnemonicParsing="false" onAction="#criterialist" text="Listar" />
+               </items>
+            </ContextMenu>
+         </contextMenu>
+      </TableView>
+      <DatePicker fx:id="fechan" layoutX="75.0" layoutY="17.0" />
+      <Label layoutX="14.0" layoutY="21.0" text="Fecha" />
+      <Label layoutX="274.0" layoutY="21.0" text="Hora" />
+      <TextField fx:id="txthora" layoutX="310.0" layoutY="17.0" />
+      <Button fx:id="save" layoutX="481.0" layoutY="17.0" mnemonicParsing="false" onAction="#addcriteria" prefHeight="25.0" prefWidth="24.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/Save_24x24.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Button fx:id="cancel" layoutX="514.0" layoutY="17.0" mnemonicParsing="false" onAction="#cancel" prefHeight="25.0" prefWidth="23.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/Cancel_16x16.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>
