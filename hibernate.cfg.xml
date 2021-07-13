@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/Laboratorio?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">12345678</property>
+    <mapping resource="POJO/ExamenHecesCp.hbm.xml"/>
+    <mapping resource="POJO/Proveedores.hbm.xml"/>
+    <mapping resource="POJO/Pacientes.hbm.xml"/>
+    <mapping resource="POJO/ExamenEmbarazo.hbm.xml"/>
+    <mapping resource="POJO/Examen.hbm.xml"/>
+    <mapping resource="POJO/Medicos.hbm.xml"/>
+    <mapping resource="POJO/Roles.hbm.xml"/>
+    <mapping resource="POJO/Usuario.hbm.xml"/>
+    <mapping resource="POJO/ExamenesVarios.hbm.xml"/>
+    <mapping resource="POJO/ExamenOrinaFq.hbm.xml"/>
+    <mapping resource="POJO/Producto.hbm.xml"/>
+    <mapping resource="POJO/ExamenHeces.hbm.xml"/>
+    <mapping resource="POJO/Citas.hbm.xml"/>
+    <mapping resource="POJO/ExamenHecesCm.hbm.xml"/>
+    <mapping resource="POJO/Kardex.hbm.xml"/>
+    <mapping resource="POJO/ExamenOrinaM.hbm.xml"/>
+    <mapping resource="POJO/ExamenOrina.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>
