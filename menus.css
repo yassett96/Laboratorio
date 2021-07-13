@@ -1,0 +1,22 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11-07-2016, 11:21:17 PM
+    Author     : Oliverhacker
+*/
+
+.popup-menu {
+    -fx-background-color:
+        linear (0%,0%) to (0%,100%) stops (0%,#383838) (100%,#141414);
+}
+ 
+.menu {
+    -fx-text-fill: #ffffff;
+}
+ 
+*.menu-item {
+    -fx-text-fill: #ffffff;
+}

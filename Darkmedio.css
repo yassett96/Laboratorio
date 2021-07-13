@@ -1,0 +1,16 @@
+.menu-bar {
+    -fx-background-color: derive(#FFFFFF,10%);
+}
+
+.context-menu {
+    -fx-background-color: derive(#BFBCBF,50%);
+}
+
+.menu-bar .label {
+    -fx-font-size: 10pt;
+    -fx-font-family: "The New Roman";
+    -fx-text-fill: black;
+    -fx-opacity: 1.5;
+}
+
+

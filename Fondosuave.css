@@ -1,0 +1,44 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10-15-2016, 10:58:42 PM
+    Author     : Oliverhacker
+*/
+
+
+.backgroundsuave {
+    -fx-background-image: url("../Imagenes/fondoSuave.jpg");
+    -fx-background-repeat: repeat;
+	-fx-background-color:
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 50%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+}
+
+.btnabrir {          
+    -fx-background-image: url("../Imagenes/Open-icon.png");
+    -fx-background-size: 30 30;
+    
+/*    -fx-border-color: black;*/
+    -fx-background-repeat: no-repeat;
+    -fx-background-position:left;   
+}
+
+
+.btnNO {          
+    -fx-background-image: url("../Imagenes/Remove_48x48.png");
+    -fx-background-size: 30 30;
+    
+/*    -fx-border-color: black;*/
+    -fx-background-repeat: no-repeat;
+    -fx-background-position:left;   
+}
+
+.Pane{
+    -fx-border-color:white; 
+    
+    
+}
