@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 02-17-2017 07:23:51 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="POJO.ExamenOrinaM" table="examen_orina_m" catalog="laboratorio" optimistic-lock="version">
+        <id name="idExamenOrina" type="int">
+            <column name="Id_Examen_Orina" />
+            <generator class="foreign">
+                <param name="property">examenOrina</param>
+            </generator>
+        </id>
+        <one-to-one name="examenOrina" class="POJO.ExamenOrina" constrained="true"></one-to-one>
+        <property name="cilindros" type="java.lang.Integer">
+            <column name="Cilindros" />
+        </property>
+        <property name="granulosos" type="java.lang.Integer">
+            <column name="Granulosos" />
+        </property>
+        <property name="leucocitarios" type="java.lang.Integer">
+            <column name="Leucocitarios" />
+        </property>
+        <property name="hematicos" type="java.lang.Integer">
+            <column name="Hematicos" />
+        </property>
+        <property name="hialinos" type="java.lang.Integer">
+            <column name="Hialinos" />
+        </property>
+        <property name="hematies" type="java.lang.Integer">
+            <column name="Hematies" />
+        </property>
+        <property name="leucocitos" type="java.lang.Integer">
+            <column name="Leucocitos" />
+        </property>
+        <property name="celulasEpiteliales" type="java.lang.Integer">
+            <column name="CelulasEpiteliales" />
+        </property>
+        <property name="cristales" type="java.lang.Integer">
+            <column name="Cristales" />
+        </property>
+        <property name="parasitologico" type="java.lang.Integer">
+            <column name="Parasitologico" />
+        </property>
+        <property name="otros" type="java.lang.Integer">
+            <column name="Otros" />
+        </property>
+        <property name="registro" type="string">
+            <column name="registro" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

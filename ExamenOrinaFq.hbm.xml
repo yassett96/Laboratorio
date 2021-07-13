@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 02-17-2017 07:23:51 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="POJO.ExamenOrinaFq" table="examen_orina_fq" catalog="laboratorio" optimistic-lock="version">
+        <id name="idExamenOrina" type="int">
+            <column name="Id_Examen_Orina" />
+            <generator class="foreign">
+                <param name="property">examenOrina</param>
+            </generator>
+        </id>
+        <one-to-one name="examenOrina" class="POJO.ExamenOrina" constrained="true"></one-to-one>
+        <property name="color" type="string">
+            <column name="Color" length="50" />
+        </property>
+        <property name="aspecto" type="string">
+            <column name="Aspecto" length="50" />
+        </property>
+        <property name="densidad" type="java.lang.Integer">
+            <column name="Densidad" />
+        </property>
+        <property name="ph" type="java.lang.Integer">
+            <column name="PH" />
+        </property>
+        <property name="proteinas" type="java.lang.Integer">
+            <column name="Proteinas" />
+        </property>
+        <property name="glucosa" type="java.lang.Integer">
+            <column name="Glucosa" />
+        </property>
+        <property name="sangreOculta" type="java.lang.Integer">
+            <column name="SangreOculta" />
+        </property>
+        <property name="cuerposCet" type="java.lang.Integer">
+            <column name="CuerposCet" />
+        </property>
+        <property name="urobilinogeno" type="java.lang.Integer">
+            <column name="Urobilinogeno" />
+        </property>
+        <property name="bilirrubina" type="java.lang.Integer">
+            <column name="Bilirrubina" />
+        </property>
+        <property name="nitritos" type="java.lang.Integer">
+            <column name="Nitritos" />
+        </property>
+        <property name="hemoglobina" type="java.lang.Integer">
+            <column name="Hemoglobina" />
+        </property>
+        <property name="esterasa" type="java.lang.Integer">
+            <column name="Esterasa" />
+        </property>
+        <property name="registro" type="string">
+            <column name="registro" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

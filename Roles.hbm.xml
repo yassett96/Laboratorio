@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 02-17-2017 07:23:51 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="POJO.Roles" table="roles" catalog="laboratorio" optimistic-lock="version">
+        <id name="idMedico" type="int">
+            <column name="Id_Medico" />
+            <generator class="foreign">
+                <param name="property">medicos</param>
+            </generator>
+        </id>
+        <one-to-one name="medicos" class="POJO.Medicos" constrained="true"></one-to-one>
+        <property name="embarazo" type="string">
+            <column name="Embarazo" length="50" />
+        </property>
+        <property name="heces" type="string">
+            <column name="Heces" length="50" />
+        </property>
+        <property name="orina" type="string">
+            <column name="Orina" length="50" />
+        </property>
+        <property name="hematologia" type="string">
+            <column name="Hematologia" length="50" />
+        </property>
+        <property name="quimica" type="string">
+            <column name="Quimica" length="50" />
+        </property>
+        <property name="inmunologia" type="string">
+            <column name="Inmunologia" length="50" />
+        </property>
+        <property name="parasitologia" type="string">
+            <column name="Parasitologia" length="50" />
+        </property>
+        <property name="bacteriologia" type="string">
+            <column name="Bacteriologia" length="50" />
+        </property>
+        <property name="bancoSangre" type="string">
+            <column name="BancoSangre" length="50" />
+        </property>
+        <property name="registro" type="string">
+            <column name="registro" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 02-17-2017 07:23:51 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="POJO.Kardex" table="kardex" catalog="laboratorio" optimistic-lock="version">
+        <id name="idMes" type="java.lang.Integer">
+            <column name="Id_Mes" />
+            <generator class="identity" />
+        </id>
+        <property name="ia1" type="java.lang.Integer">
+            <column name="IA1" />
+        </property>
+        <property name="ia2" type="java.lang.Integer">
+            <column name="IA2" />
+        </property>
+        <property name="ca1" type="java.lang.Integer">
+            <column name="CA1" />
+        </property>
+        <property name="ca2" type="java.lang.Integer">
+            <column name="CA2" />
+        </property>
+        <property name="ea1" type="java.lang.Integer">
+            <column name="EA1" />
+        </property>
+        <property name="ea2" type="java.lang.Integer">
+            <column name="EA2" />
+        </property>
+        <property name="ea1r" type="java.lang.Integer">
+            <column name="EA1R" />
+        </property>
+        <property name="ea1nr" type="java.lang.Integer">
+            <column name="EA1NR" />
+        </property>
+        <property name="ea2r" type="java.lang.Integer">
+            <column name="EA2R" />
+        </property>
+        <property name="ea2nr" type="java.lang.Integer">
+            <column name="EA2NR" />
+        </property>
+        <property name="pa1r" type="java.lang.Integer">
+            <column name="PA1R" />
+        </property>
+        <property name="pa1nr" type="java.lang.Integer">
+            <column name="PA1NR" />
+        </property>
+        <property name="pa2r" type="java.lang.Integer">
+            <column name="PA2R" />
+        </property>
+        <property name="pa2nr" type="java.lang.Integer">
+            <column name="PA2NR" />
+        </property>
+        <property name="ta1r" type="java.lang.Integer">
+            <column name="TA1R" />
+        </property>
+        <property name="ta1nr" type="java.lang.Integer">
+            <column name="TA1NR" />
+        </property>
+        <property name="ta2r" type="java.lang.Integer">
+            <column name="TA2R" />
+        </property>
+        <property name="ta2nr" type="java.lang.Integer">
+            <column name="TA2NR" />
+        </property>
+        <property name="xa1r" type="java.lang.Integer">
+            <column name="XA1R" />
+        </property>
+        <property name="xa1nr" type="java.lang.Integer">
+            <column name="XA1NR" />
+        </property>
+        <property name="xa2r" type="java.lang.Integer">
+            <column name="XA2R" />
+        </property>
+        <property name="xa2nr" type="java.lang.Integer">
+            <column name="XA2NR" />
+        </property>
+        <property name="cca1" type="java.lang.Integer">
+            <column name="CCA1" />
+        </property>
+        <property name="cca2" type="java.lang.Integer">
+            <column name="CCA2" />
+        </property>
+        <property name="npa1" type="java.lang.Integer">
+            <column name="NPA1" />
+        </property>
+        <property name="npa2" type="java.lang.Integer">
+            <column name="NPA2" />
+        </property>
+        <property name="mes" type="string">
+            <column name="Mes" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

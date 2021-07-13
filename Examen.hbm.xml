@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 02-17-2017 07:23:51 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="POJO.Examen" table="examen" catalog="laboratorio" optimistic-lock="version">
+        <id name="idExamen" type="java.lang.Integer">
+            <column name="Id_Examen" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="medicos" class="POJO.Medicos" fetch="select">
+            <column name="Id_Medico" />
+        </many-to-one>
+        <many-to-one name="pacientes" class="POJO.Pacientes" fetch="select">
+            <column name="Id_Paciente" />
+        </many-to-one>
+        <property name="categoria" type="string">
+            <column name="Categoria" length="50" />
+        </property>
+        <property name="examenTipo" type="string">
+            <column name="Examen_Tipo" length="50" />
+        </property>
+        <property name="estado" type="string">
+            <column name="Estado" length="50" />
+        </property>
+        <property name="registro" type="string">
+            <column name="registro" length="45" />
+        </property>
+        <one-to-one name="examenesVarios" class="POJO.ExamenesVarios"></one-to-one>
+        <one-to-one name="examenOrina" class="POJO.ExamenOrina"></one-to-one>
+        <one-to-one name="examenEmbarazo" class="POJO.ExamenEmbarazo"></one-to-one>
+        <one-to-one name="citas" class="POJO.Citas"></one-to-one>
+        <one-to-one name="examenHeces" class="POJO.ExamenHeces"></one-to-one>
+    </class>
+</hibernate-mapping>

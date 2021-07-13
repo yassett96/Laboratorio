@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 02-17-2017 07:23:51 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="POJO.ExamenesVarios" table="examenes_varios" catalog="laboratorio" optimistic-lock="version">
+        <id name="idExamenV" type="int">
+            <column name="Id_ExamenV" />
+            <generator class="foreign">
+                <param name="property">examen</param>
+            </generator>
+        </id>
+        <one-to-one name="examen" class="POJO.Examen" constrained="true"></one-to-one>
+        <property name="examenPracticado" type="string">
+            <column name="ExamenPracticado" length="50" />
+        </property>
+        <property name="resultado" type="string">
+            <column name="Resultado" length="50" />
+        </property>
+        <property name="observaciones" type="string">
+            <column name="Observaciones" />
+        </property>
+        <property name="registro" type="string">
+            <column name="registro" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

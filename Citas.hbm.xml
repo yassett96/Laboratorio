@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 02-17-2017 07:23:51 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="POJO.Citas" table="citas" catalog="laboratorio" optimistic-lock="version">
+        <id name="idExamen" type="int">
+            <column name="Id_Examen" />
+            <generator class="foreign">
+                <param name="property">examen</param>
+            </generator>
+        </id>
+        <one-to-one name="examen" class="POJO.Examen" constrained="true"></one-to-one>
+        <property name="fecha" type="date">
+            <column name="Fecha" length="10" />
+        </property>
+        <property name="hora" type="string">
+            <column name="Hora" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>
