@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 02-17-2017 07:23:51 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="POJO.ExamenHecesCp" table="examen_heces_cp" catalog="laboratorio" optimistic-lock="version">
+        <id name="idExamenHeces" type="int">
+            <column name="Id_Examen_Heces" />
+            <generator class="foreign">
+                <param name="property">examenHeces</param>
+            </generator>
+        </id>
+        <one-to-one name="examenHeces" class="POJO.ExamenHeces" constrained="true"></one-to-one>
+        <property name="entamoebaHA" type="string">
+            <column name="Entamoeba_H_A" length="50" />
+        </property>
+        <property name="entamoebaHQ" type="string">
+            <column name="Entamoeba_H_Q" length="50" />
+        </property>
+        <property name="entamoebaColiA" type="string">
+            <column name="Entamoeba_Coli_A" length="50" />
+        </property>
+        <property name="entamoebaColiQ" type="string">
+            <column name="Entamoeba_Coli_Q" length="50" />
+        </property>
+        <property name="endolimaxA" type="string">
+            <column name="Endolimax_A" length="50" />
+        </property>
+        <property name="endolimaxQ" type="string">
+            <column name="Endolimax_Q" length="50" />
+        </property>
+        <property name="giardiaA" type="string">
+            <column name="Giardia_A" length="50" />
+        </property>
+        <property name="giardiaQ" type="string">
+            <column name="Giardia_Q" length="50" />
+        </property>
+        <property name="trichomonasA" type="string">
+            <column name="Trichomonas_A" length="50" />
+        </property>
+        <property name="trichomonasQ" type="string">
+            <column name="Trichomonas_Q" length="50" />
+        </property>
+        <property name="chilomastixA" type="string">
+            <column name="Chilomastix_A" length="50" />
+        </property>
+        <property name="chilomastixQ" type="string">
+            <column name="Chilomastix_Q" length="50" />
+        </property>
+        <property name="iodamoebaA" type="string">
+            <column name="Iodamoeba_A" length="50" />
+        </property>
+        <property name="iodamoebaQ" type="string">
+            <column name="Iodamoeba_Q" length="50" />
+        </property>
+        <property name="otrosA" type="string">
+            <column name="Otros_A" length="50" />
+        </property>
+        <property name="otrosQ" type="string">
+            <column name="Otros_Q" length="50" />
+        </property>
+        <property name="registro" type="string">
+            <column name="registro" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

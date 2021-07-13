@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 02-17-2017 07:23:51 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="POJO.Producto" table="producto" catalog="laboratorio" optimistic-lock="version">
+        <id name="idProducto" type="java.lang.Integer">
+            <column name="IdProducto" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="proveedores" class="POJO.Proveedores" fetch="select">
+            <column name="Id_Proveedor" />
+        </many-to-one>
+        <property name="producto" type="string">
+            <column name="Producto" length="100" />
+        </property>
+        <property name="enero" type="string">
+            <column name="Enero" length="65535" />
+        </property>
+        <property name="febrero" type="string">
+            <column name="Febrero" length="65535" />
+        </property>
+        <property name="marzo" type="string">
+            <column name="Marzo" length="20" />
+        </property>
+        <property name="abril" type="string">
+            <column name="Abril" length="20" />
+        </property>
+        <property name="mayo" type="string">
+            <column name="Mayo" length="20" />
+        </property>
+        <property name="junio" type="string">
+            <column name="Junio" length="20" />
+        </property>
+        <property name="julio" type="string">
+            <column name="Julio" length="20" />
+        </property>
+        <property name="agosto" type="string">
+            <column name="Agosto" length="20" />
+        </property>
+        <property name="septiembre" type="string">
+            <column name="Septiembre" length="20" />
+        </property>
+        <property name="octubre" type="string">
+            <column name="Octubre" length="20" />
+        </property>
+        <property name="noviembre" type="string">
+            <column name="Noviembre" length="20" />
+        </property>
+        <property name="diciembre" type="string">
+            <column name="Diciembre" length="20" />
+        </property>
+        <property name="registro" type="string">
+            <column name="registro" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

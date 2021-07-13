@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 02-17-2017 07:23:51 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="POJO.Medicos" table="medicos" catalog="laboratorio" optimistic-lock="version">
+        <id name="idMedico" type="java.lang.Integer">
+            <column name="Id_Medico" />
+            <generator class="identity" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="Nombre" length="50" />
+        </property>
+        <property name="apellido" type="string">
+            <column name="Apellido" length="50" />
+        </property>
+        <property name="cargo" type="string">
+            <column name="Cargo" length="50" />
+        </property>
+        <property name="noCedula" type="string">
+            <column name="NoCedula" length="50" />
+        </property>
+        <property name="telefono" type="java.lang.Integer">
+            <column name="Telefono" />
+        </property>
+        <property name="edad" type="java.lang.Integer">
+            <column name="Edad" />
+        </property>
+        <property name="direccion" type="string">
+            <column name="Direccion" length="100" />
+        </property>
+        <property name="foto" type="binary">
+            <column name="Foto" />
+        </property>
+        <property name="registro" type="string">
+            <column name="registro" length="45" />
+        </property>
+        <set name="examens" table="examen" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="Id_Medico" />
+            </key>
+            <one-to-many class="POJO.Examen" />
+        </set>
+        <one-to-one name="roles" class="POJO.Roles"></one-to-one>
+        <one-to-one name="usuario" class="POJO.Usuario"></one-to-one>
+    </class>
+</hibernate-mapping>
