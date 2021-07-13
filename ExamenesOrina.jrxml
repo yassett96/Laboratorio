@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="612" pageHeight="792" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8e6028b8-93f6-4868-b175-ce3178b722c6">
+	<property name="ireport.zoom" value="1.9487171000000019"/>
+	<property name="ireport.x" value="18"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Title" fontName="Arial" fontSize="26" isBold="true" pdfFontName="Helvetica-Bold"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<style name="Crosstab Data Text" hAlign="Center"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="8cbb2103-a87d-422f-84af-29d6180d6716"/>
+	<parameter name="inicio" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="fin" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select p.NoExpediente,CONCAT(p.Nombres,' ',p.Apellidos) as NombreCompleto,CAST(c.Fecha AS char) as Fecha,CONCAT(m.Nombre,' ',m.Apellido) as Medico
+		from examen e
+        inner join pacientes p
+        on e.Id_Paciente=p.Id_Paciente
+        inner join examen_orina ee
+        on e.Id_Examen=ee.Id_Examen
+        inner join medicos m
+        on e.Id_Medico=m.Id_Medico
+        inner join citas c
+        on e.Id_Examen=c.Id_Examen
+        where (c.Fecha BETWEEN $P{inicio} and $P{fin})
+        and ee.registro='Activo']]>
+	</queryString>
+	<field name="NoExpediente" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NombreCompleto" class="java.lang.String"/>
+	<field name="Fecha" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Medico" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="112" splitType="Stretch">
+			<image>
+				<reportElement x="8" y="-10" width="124" height="56" uuid="334b0fca-9886-4f5a-9fbc-81e9b4019cc9"/>
+				<imageExpression><![CDATA["../Reportes/minsa.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement style="Title" x="61" y="13" width="263" height="33" uuid="1e5c4f33-a10f-48f5-8b23-0eba883e7a0d"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Ministerio de Salud]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="SubTitle" x="3" y="45" width="354" height="22" uuid="3bb074be-78fa-49a8-86f5-30328a489f24"/>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[Hospital Nilda Patricia Velazco de Zedillo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="194" y="75" width="223" height="24" uuid="09da9451-6dda-4dc4-ae1a-a2e261ff1074"/>
+				<textElement>
+					<font fontName="Monotype Corsiva" size="18"/>
+				</textElement>
+				<text><![CDATA[Reporte de Examenes Por Fecha]]></text>
+			</staticText>
+			<image>
+				<reportElement x="350" y="-19" width="242" height="65" uuid="b8ba1a73-c052-465e-807b-73629621ce6a"/>
+				<imageExpression><![CDATA["../Reportes/logoGob.gif"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="27" splitType="Stretch">
+			<staticText>
+				<reportElement x="6" y="0" width="91" height="20" forecolor="#E81982" uuid="4f3a486e-e3e3-49de-b943-d0bb06666aae"/>
+				<textElement>
+					<font size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[No. Expediente]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="111" y="0" width="104" height="20" forecolor="#E81982" uuid="9286e136-c117-4fbc-881d-fee6b3171a55"/>
+				<textElement>
+					<font size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Nombre del Paciente]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="218" y="0" width="100" height="20" forecolor="#E81982" uuid="d4ed93c3-6914-44bc-a22b-37eb0776938f"/>
+				<textElement>
+					<font size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Fecha de Entrega]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="323" y="0" width="100" height="20" forecolor="#E81982" uuid="04fd2a68-876c-4ac0-824d-0fe6fea10a10"/>
+				<textElement>
+					<font size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Nombre del Medico]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="26" width="424" height="1" uuid="de2306d0-2c44-4cbc-b0a3-7ec8d9d3a409"/>
+			</line>
+			<line>
+				<reportElement x="0" y="-4" width="424" height="1" uuid="624523a7-90df-43c5-886c-95cf7c43236a"/>
+			</line>
+			<line>
+				<reportElement x="-1" y="-4" width="1" height="29" uuid="05ab4e4a-eac3-4e03-804c-d5f16b6d1c61"/>
+			</line>
+			<line>
+				<reportElement x="108" y="-4" width="1" height="29" uuid="c6d53a3e-5897-4125-8261-e3a238ffb464"/>
+			</line>
+			<line>
+				<reportElement x="214" y="-4" width="1" height="29" uuid="0d2f27c9-7434-4d03-bfb7-cd5c2c8b9650"/>
+			</line>
+			<line>
+				<reportElement x="318" y="-4" width="1" height="29" uuid="7b708963-b7cc-4b92-859d-562c5798734e"/>
+			</line>
+			<line>
+				<reportElement x="423" y="-4" width="1" height="29" uuid="2b13ea92-a735-46bd-8760-87bcdff18f08"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="27" splitType="Stretch">
+			<line>
+				<reportElement x="-1" y="-5" width="1" height="28" uuid="9b3b5ef3-8b6f-4d7a-9e06-bbb9145a0b6d"/>
+			</line>
+			<line>
+				<reportElement x="0" y="23" width="424" height="1" uuid="3ab16dc8-e140-41c7-b020-b91f9c983fed"/>
+			</line>
+			<line>
+				<reportElement x="108" y="-6" width="1" height="29" uuid="22f5e07c-7d44-4897-88e1-cfcdba04439f"/>
+			</line>
+			<line>
+				<reportElement x="214" y="-7" width="1" height="29" uuid="5a3c9b5e-213d-48fe-a4a5-9ec9534a2fc0"/>
+			</line>
+			<line>
+				<reportElement x="318" y="-7" width="1" height="29" uuid="f39d6b76-9df3-4ca1-a84d-2b426784d20c"/>
+			</line>
+			<line>
+				<reportElement x="423" y="-7" width="1" height="29" uuid="54eb43c8-50f3-4b65-8b5e-6b6734e82c6b"/>
+			</line>
+			<textField>
+				<reportElement x="3" y="0" width="100" height="20" uuid="11e20a37-a56e-446b-8ae4-543c581c4fc8"/>
+				<textFieldExpression><![CDATA[$F{NoExpediente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="111" y="2" width="100" height="20" uuid="aa51c235-e4ab-4a47-aa24-26fd5426f7fa"/>
+				<textFieldExpression><![CDATA[$F{NombreCompleto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="216" y="-1" width="100" height="20" uuid="ad2b363d-9b4d-461d-9c5c-53e4ecbc9eab"/>
+				<textFieldExpression><![CDATA[$F{Fecha}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="321" y="-1" width="100" height="20" uuid="fe1afb9d-5dc2-454f-a449-bfa30507ad7b"/>
+				<textFieldExpression><![CDATA[$F{Medico}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement style="Column header" x="433" y="0" width="80" height="20" uuid="856e3ce5-5184-4e7b-abf6-3db67ef90630"/>
+				<textElement textAlignment="Right">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement style="Column header" x="513" y="0" width="40" height="20" uuid="950eeda9-ea5b-4c9c-9951-2c9f5982a309"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement style="Column header" x="0" y="0" width="197" height="20" uuid="b23f76d4-839d-46c7-9040-0a88fa79d773"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement x="216" y="4" width="164" height="50" uuid="d86ef55e-8a16-442f-b14d-2b9f96e25d71"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39" drawText="false" checksumRequired="false">
+					<jr:codeExpression><![CDATA["1234"]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
