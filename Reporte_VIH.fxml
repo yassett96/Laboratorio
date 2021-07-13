@@ -1,0 +1,1721 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="438.0" prefWidth="1177.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.Reporte_VIHController">
+   <children>
+      <TextField alignment="CENTER" editable="false" layoutX="82.0" layoutY="2.0" prefHeight="25.0" prefWidth="304.0" text="Kardex">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="386.0" layoutY="2.0" prefHeight="25.0" prefWidth="547.0" text="Resultado según población">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="934.0" layoutY="2.0" prefHeight="25.0" prefWidth="147.0" text="Número pacientes">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutY="2.0" prefHeight="98.0" prefWidth="82.0" text="Mes">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="82.0" layoutY="27.0" prefHeight="25.0" prefWidth="100.0" text="Ingresos">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="181.0" layoutY="27.0" prefHeight="25.0" prefWidth="107.0" text="Consumos">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="286.0" layoutY="27.0" prefHeight="25.0" prefWidth="100.0" text="Existencia">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="613.0" layoutY="27.0" prefHeight="25.0" prefWidth="113.0" text="Tuberculosis">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="491.0" layoutY="27.0" prefHeight="25.0" prefWidth="121.0" text="Población general">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="386.0" layoutY="27.0" prefHeight="25.0" prefWidth="113.0" text="Embarazadas">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="722.0" layoutY="27.0" prefHeight="25.0" prefWidth="113.0" text="ITS">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="835.0" layoutY="27.0" prefHeight="25.0" prefWidth="100.0" text="Control calidad">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="1008.0" layoutY="30.0" prefHeight="70.0" prefWidth="72.0" text="A2">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="936.0" layoutY="30.0" prefHeight="70.0" prefWidth="72.0" text="A1">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="134.0" layoutY="52.0" prefHeight="47.0" prefWidth="46.0" text="A2">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="82.0" layoutY="52.0" prefHeight="47.0" prefWidth="52.0" text="A1">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="180.0" layoutY="52.0" prefHeight="47.0" prefWidth="52.0" text="A1">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="234.0" layoutY="52.0" prefHeight="47.0" prefWidth="52.0" text="A2">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="342.0" layoutY="52.0" prefHeight="47.0" prefWidth="46.0" text="A2">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="288.0" layoutY="52.0" prefHeight="47.0" prefWidth="52.0" text="A1">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="387.0" layoutY="52.0" prefHeight="25.0" prefWidth="58.0" text="A1">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="448.0" layoutY="52.0" prefHeight="25.0" prefWidth="52.0" text="A2">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="496.0" layoutY="52.0" prefHeight="25.0" prefWidth="52.0" text="A1">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="549.0" layoutY="52.0" prefHeight="25.0" prefWidth="64.0" text="A2">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="612.0" layoutY="52.0" prefHeight="25.0" prefWidth="58.0" text="A1">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="670.0" layoutY="52.0" prefHeight="25.0" prefWidth="52.0" text="A2">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="722.0" layoutY="52.0" prefHeight="25.0" prefWidth="58.0" text="A1">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="780.0" layoutY="52.0" prefHeight="25.0" prefWidth="58.0" text="A2">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="836.0" layoutY="52.0" prefHeight="47.0" prefWidth="52.0" text="A1">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="888.0" layoutY="52.0" prefHeight="47.0" prefWidth="46.0" text="A2">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="413.0" layoutY="77.0" prefHeight="25.0" prefWidth="32.0" text="NR">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="387.0" layoutY="77.0" prefHeight="25.0" prefWidth="26.0" text="R">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="471.0" layoutY="77.0" prefHeight="25.0" prefWidth="32.0" text="NR">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="445.0" layoutY="77.0" prefHeight="25.0" prefWidth="26.0" text="R">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="497.0" layoutY="77.0" prefHeight="25.0" prefWidth="26.0" text="R">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="519.0" layoutY="77.0" prefHeight="25.0" prefWidth="32.0" text="NR">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="552.0" layoutY="77.0" prefHeight="25.0" prefWidth="26.0" text="R">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="578.0" layoutY="77.0" prefHeight="25.0" prefWidth="32.0" text="NR">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="611.0" layoutY="77.0" prefHeight="25.0" prefWidth="26.0" text="R">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="637.0" layoutY="77.0" prefHeight="25.0" prefWidth="32.0" text="NR">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="669.0" layoutY="77.0" prefHeight="25.0" prefWidth="26.0" text="R">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="692.0" layoutY="77.0" prefHeight="25.0" prefWidth="32.0" text="NR">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="722.0" layoutY="77.0" prefHeight="25.0" prefWidth="26.0" text="R">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="748.0" layoutY="77.0" prefHeight="25.0" prefWidth="32.0" text="NR">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="780.0" layoutY="77.0" prefHeight="25.0" prefWidth="26.0" text="R">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="806.0" layoutY="77.0" prefHeight="25.0" prefWidth="32.0" text="NR">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="-1.0" layoutY="102.0" prefHeight="25.0" prefWidth="82.0" text="Enero">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutY="127.0" prefHeight="25.0" prefWidth="82.0" text="Febrero">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="1.0" layoutY="150.0" prefHeight="25.0" prefWidth="82.0" text="Marzo">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutY="175.0" prefHeight="25.0" prefWidth="82.0" text="Abril">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutY="200.0" prefHeight="25.0" prefWidth="82.0" text="Mayo">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="1.0" layoutY="225.0" prefHeight="25.0" prefWidth="82.0" text="Junio">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutY="250.0" prefHeight="25.0" prefWidth="82.0" text="Julio">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutY="275.0" prefHeight="25.0" prefWidth="82.0" text="Agosto">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutY="300.0" prefHeight="25.0" prefWidth="82.0" text="Septiembre">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutY="325.0" prefHeight="25.0" prefWidth="82.0" text="Octubre">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutY="350.0" prefHeight="25.0" prefWidth="82.0" text="Noviembre">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField alignment="CENTER" editable="false" layoutX="1.0" layoutY="375.0" prefHeight="25.0" prefWidth="82.0" text="Diciembre">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="e1" layoutX="83.0" layoutY="102.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="e2" layoutX="135.0" layoutY="102.0" prefHeight="25.0" prefWidth="46.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="e3" layoutX="180.0" layoutY="102.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="e4" layoutX="234.0" layoutY="102.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="e5" layoutX="288.0" layoutY="102.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="e6" layoutX="342.0" layoutY="102.0" prefHeight="25.0" prefWidth="46.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="e7" layoutX="387.0" layoutY="102.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="e8" layoutX="413.0" layoutY="102.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="e9" layoutX="445.0" layoutY="102.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="e10" layoutX="470.0" layoutY="102.0" prefHeight="25.0" prefWidth="30.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="e11" layoutX="497.0" layoutY="102.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="e12" layoutX="522.0" layoutY="102.0" prefHeight="25.0" prefWidth="30.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="e13" layoutX="552.0" layoutY="102.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="e14" layoutX="578.0" layoutY="102.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="e15" layoutX="612.0" layoutY="102.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="e16" layoutX="638.0" layoutY="102.0" prefHeight="25.0" prefWidth="30.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="e17" layoutX="669.0" layoutY="102.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="e18" layoutX="692.0" layoutY="102.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="e19" layoutX="722.0" layoutY="102.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="e20" layoutX="748.0" layoutY="102.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="e21" layoutX="780.0" layoutY="102.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="e22" layoutX="806.0" layoutY="102.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="e24" layoutX="888.0" layoutY="102.0" prefHeight="25.0" prefWidth="46.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="e23" layoutX="836.0" layoutY="102.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="e25" layoutX="934.0" layoutY="102.0" prefHeight="25.0" prefWidth="72.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="e26" layoutX="1008.0" layoutY="102.0" prefHeight="25.0" prefWidth="72.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="f26" layoutX="1008.0" layoutY="127.0" prefHeight="25.0" prefWidth="72.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="f25" layoutX="934.0" layoutY="127.0" prefHeight="25.0" prefWidth="72.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="f23" layoutX="836.0" layoutY="127.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="f24" layoutX="888.0" layoutY="127.0" prefHeight="25.0" prefWidth="46.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="f22" layoutX="806.0" layoutY="127.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="f21" layoutX="780.0" layoutY="127.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="f20" layoutX="748.0" layoutY="127.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="f19" layoutX="722.0" layoutY="127.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="f18" layoutX="692.0" layoutY="127.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="f17" layoutX="669.0" layoutY="127.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="f16" layoutX="638.0" layoutY="127.0" prefHeight="25.0" prefWidth="30.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="f15" layoutX="612.0" layoutY="127.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="f14" layoutX="578.0" layoutY="127.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="f13" layoutX="552.0" layoutY="127.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="f12" layoutX="522.0" layoutY="127.0" prefHeight="25.0" prefWidth="30.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="f11" layoutX="497.0" layoutY="127.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="f10" layoutX="470.0" layoutY="127.0" prefHeight="25.0" prefWidth="30.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="f9" layoutX="445.0" layoutY="127.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="f8" layoutX="413.0" layoutY="127.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="f7" layoutX="387.0" layoutY="127.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="f6" layoutX="342.0" layoutY="127.0" prefHeight="25.0" prefWidth="46.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="f5" layoutX="288.0" layoutY="127.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="f4" layoutX="234.0" layoutY="127.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="f3" layoutX="180.0" layoutY="127.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="f2" layoutX="135.0" layoutY="127.0" prefHeight="25.0" prefWidth="46.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="f1" layoutX="83.0" layoutY="127.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="m26" layoutX="1008.0" layoutY="150.0" prefHeight="25.0" prefWidth="72.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="m25" layoutX="934.0" layoutY="150.0" prefHeight="25.0" prefWidth="72.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="m23" layoutX="836.0" layoutY="150.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="m24" layoutX="888.0" layoutY="150.0" prefHeight="25.0" prefWidth="46.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="m22" layoutX="806.0" layoutY="150.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="m21" layoutX="780.0" layoutY="150.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="m20" layoutX="748.0" layoutY="150.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="m19" layoutX="722.0" layoutY="150.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="m18" layoutX="692.0" layoutY="150.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="m17" layoutX="669.0" layoutY="150.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="m16" layoutX="638.0" layoutY="150.0" prefHeight="25.0" prefWidth="30.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="m15" layoutX="612.0" layoutY="150.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="m14" layoutX="578.0" layoutY="150.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="m13" layoutX="552.0" layoutY="150.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="m12" layoutX="522.0" layoutY="150.0" prefHeight="25.0" prefWidth="30.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="m11" layoutX="497.0" layoutY="150.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="m10" layoutX="470.0" layoutY="150.0" prefHeight="25.0" prefWidth="30.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="m9" layoutX="445.0" layoutY="150.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="m8" layoutX="413.0" layoutY="150.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="m7" layoutX="387.0" layoutY="150.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="m6" layoutX="342.0" layoutY="150.0" prefHeight="25.0" prefWidth="46.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="m5" layoutX="288.0" layoutY="150.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="m4" layoutX="234.0" layoutY="150.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="m3" layoutX="180.0" layoutY="150.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="m2" layoutX="135.0" layoutY="150.0" prefHeight="25.0" prefWidth="46.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="m1" layoutX="83.0" layoutY="150.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="a26" layoutX="1008.0" layoutY="175.0" prefHeight="25.0" prefWidth="72.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="a25" layoutX="934.0" layoutY="175.0" prefHeight="25.0" prefWidth="72.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="a23" layoutX="836.0" layoutY="175.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="a24" layoutX="888.0" layoutY="175.0" prefHeight="25.0" prefWidth="46.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="a22" layoutX="806.0" layoutY="175.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="a21" layoutX="780.0" layoutY="175.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="a20" layoutX="748.0" layoutY="175.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="a19" layoutX="722.0" layoutY="175.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="a18" layoutX="692.0" layoutY="175.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="a17" layoutX="669.0" layoutY="175.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="a16" layoutX="638.0" layoutY="175.0" prefHeight="25.0" prefWidth="30.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="a15" layoutX="612.0" layoutY="175.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="a14" layoutX="578.0" layoutY="175.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="a13" layoutX="552.0" layoutY="175.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="a12" layoutX="522.0" layoutY="175.0" prefHeight="25.0" prefWidth="30.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="a11" layoutX="497.0" layoutY="175.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="a10" layoutX="470.0" layoutY="175.0" prefHeight="25.0" prefWidth="30.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="a9" layoutX="445.0" layoutY="175.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="a8" layoutX="413.0" layoutY="175.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="a7" layoutX="387.0" layoutY="175.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="a6" layoutX="342.0" layoutY="175.0" prefHeight="25.0" prefWidth="46.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="a5" layoutX="288.0" layoutY="175.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="a4" layoutX="234.0" layoutY="175.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="a3" layoutX="180.0" layoutY="175.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="a2" layoutX="135.0" layoutY="175.0" prefHeight="25.0" prefWidth="46.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="a1" layoutX="83.0" layoutY="175.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="mm26" layoutX="1008.0" layoutY="200.0" prefHeight="25.0" prefWidth="72.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="mm25" layoutX="934.0" layoutY="200.0" prefHeight="25.0" prefWidth="72.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="mm23" layoutX="836.0" layoutY="200.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="mm24" layoutX="888.0" layoutY="200.0" prefHeight="25.0" prefWidth="46.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="mm22" layoutX="806.0" layoutY="200.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="mm21" layoutX="780.0" layoutY="200.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="mm20" layoutX="748.0" layoutY="200.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="mm19" layoutX="722.0" layoutY="200.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="mm18" layoutX="692.0" layoutY="200.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="mm17" layoutX="669.0" layoutY="200.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="mm16" layoutX="638.0" layoutY="200.0" prefHeight="25.0" prefWidth="30.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="mm15" layoutX="612.0" layoutY="200.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="mm14" layoutX="578.0" layoutY="200.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="mm13" layoutX="552.0" layoutY="200.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="mm12" layoutX="522.0" layoutY="200.0" prefHeight="25.0" prefWidth="30.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="mm11" layoutX="497.0" layoutY="200.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="mm10" layoutX="470.0" layoutY="200.0" prefHeight="25.0" prefWidth="30.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="mm9" layoutX="445.0" layoutY="200.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="mm8" layoutX="413.0" layoutY="200.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="mm7" layoutX="387.0" layoutY="200.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="mm6" layoutX="342.0" layoutY="200.0" prefHeight="25.0" prefWidth="46.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="mm5" layoutX="288.0" layoutY="200.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="mm4" layoutX="234.0" layoutY="200.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="mm3" layoutX="180.0" layoutY="200.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="mm2" layoutX="135.0" layoutY="200.0" prefHeight="25.0" prefWidth="46.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="mm1" layoutX="83.0" layoutY="200.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="j26" layoutX="1008.0" layoutY="225.0" prefHeight="25.0" prefWidth="72.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="j25" layoutX="934.0" layoutY="225.0" prefHeight="25.0" prefWidth="72.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="j23" layoutX="836.0" layoutY="225.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="j24" layoutX="888.0" layoutY="225.0" prefHeight="25.0" prefWidth="46.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="j22" layoutX="806.0" layoutY="225.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="j21" layoutX="780.0" layoutY="225.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="j20" layoutX="748.0" layoutY="225.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="j19" layoutX="722.0" layoutY="225.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="j18" layoutX="692.0" layoutY="225.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="j17" layoutX="669.0" layoutY="225.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="j16" layoutX="638.0" layoutY="225.0" prefHeight="25.0" prefWidth="30.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="j15" layoutX="612.0" layoutY="225.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="j14" layoutX="578.0" layoutY="225.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="j13" layoutX="552.0" layoutY="225.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="j12" layoutX="522.0" layoutY="225.0" prefHeight="25.0" prefWidth="30.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="j11" layoutX="497.0" layoutY="225.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="j10" layoutX="470.0" layoutY="225.0" prefHeight="25.0" prefWidth="30.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="j9" layoutX="445.0" layoutY="225.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="j8" layoutX="413.0" layoutY="225.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="j7" layoutX="387.0" layoutY="225.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="j6" layoutX="342.0" layoutY="225.0" prefHeight="25.0" prefWidth="46.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="j5" layoutX="288.0" layoutY="225.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="j4" layoutX="234.0" layoutY="225.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="j3" layoutX="180.0" layoutY="225.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="j2" layoutX="135.0" layoutY="225.0" prefHeight="25.0" prefWidth="46.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="j1" layoutX="83.0" layoutY="225.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="jj26" layoutX="1008.0" layoutY="250.0" prefHeight="25.0" prefWidth="72.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="jj25" layoutX="934.0" layoutY="250.0" prefHeight="25.0" prefWidth="72.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="jj23" layoutX="836.0" layoutY="250.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="jj24" layoutX="888.0" layoutY="250.0" prefHeight="25.0" prefWidth="46.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="jj22" layoutX="806.0" layoutY="250.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="jj21" layoutX="780.0" layoutY="250.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="jj20" layoutX="748.0" layoutY="250.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="jj19" layoutX="722.0" layoutY="250.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="jj18" layoutX="692.0" layoutY="250.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="jj17" layoutX="669.0" layoutY="250.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="jj16" layoutX="638.0" layoutY="250.0" prefHeight="25.0" prefWidth="30.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="jj15" layoutX="612.0" layoutY="250.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="jj14" layoutX="578.0" layoutY="250.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="jj13" layoutX="552.0" layoutY="250.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="jj12" layoutX="522.0" layoutY="250.0" prefHeight="25.0" prefWidth="30.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="jj11" layoutX="497.0" layoutY="250.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="jj10" layoutX="470.0" layoutY="250.0" prefHeight="25.0" prefWidth="30.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="jj9" layoutX="445.0" layoutY="250.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="jj8" layoutX="413.0" layoutY="250.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="jj7" layoutX="387.0" layoutY="250.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="jj6" layoutX="342.0" layoutY="250.0" prefHeight="25.0" prefWidth="46.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="jj5" layoutX="288.0" layoutY="250.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="jj4" layoutX="234.0" layoutY="250.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="jj3" layoutX="180.0" layoutY="250.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="jj2" layoutX="135.0" layoutY="250.0" prefHeight="25.0" prefWidth="46.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="jj1" layoutX="83.0" layoutY="250.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="ag26" layoutX="1008.0" layoutY="275.0" prefHeight="25.0" prefWidth="72.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="ag25" layoutX="934.0" layoutY="275.0" prefHeight="25.0" prefWidth="72.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="ag23" layoutX="836.0" layoutY="275.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="ag24" layoutX="888.0" layoutY="275.0" prefHeight="25.0" prefWidth="46.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="ag22" layoutX="806.0" layoutY="275.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="ag21" layoutX="780.0" layoutY="275.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="ag20" layoutX="748.0" layoutY="275.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="ag19" layoutX="722.0" layoutY="275.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="ag18" layoutX="692.0" layoutY="275.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="ag17" layoutX="669.0" layoutY="275.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="ag16" layoutX="638.0" layoutY="275.0" prefHeight="25.0" prefWidth="30.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="ag15" layoutX="612.0" layoutY="275.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="ag14" layoutX="578.0" layoutY="275.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="ag13" layoutX="552.0" layoutY="275.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="ag12" layoutX="522.0" layoutY="275.0" prefHeight="25.0" prefWidth="30.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="ag11" layoutX="497.0" layoutY="275.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="ag10" layoutX="470.0" layoutY="275.0" prefHeight="25.0" prefWidth="30.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="ag9" layoutX="445.0" layoutY="275.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="ag8" layoutX="413.0" layoutY="275.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="ag7" layoutX="387.0" layoutY="275.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="ag6" layoutX="342.0" layoutY="275.0" prefHeight="25.0" prefWidth="46.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="ag5" layoutX="288.0" layoutY="275.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="ag4" layoutX="234.0" layoutY="275.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="ag3" layoutX="180.0" layoutY="275.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="ag2" layoutX="135.0" layoutY="275.0" prefHeight="25.0" prefWidth="46.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="ag1" layoutX="83.0" layoutY="275.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="s26" layoutX="1008.0" layoutY="300.0" prefHeight="25.0" prefWidth="72.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="s25" layoutX="934.0" layoutY="300.0" prefHeight="25.0" prefWidth="72.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="s23" layoutX="836.0" layoutY="300.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="s24" layoutX="888.0" layoutY="300.0" prefHeight="25.0" prefWidth="46.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="s22" layoutX="806.0" layoutY="300.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="s21" layoutX="780.0" layoutY="300.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="s20" layoutX="748.0" layoutY="300.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="s19" layoutX="722.0" layoutY="300.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="s18" layoutX="692.0" layoutY="300.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="s17" layoutX="669.0" layoutY="300.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="s16" layoutX="638.0" layoutY="300.0" prefHeight="25.0" prefWidth="30.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="s15" layoutX="612.0" layoutY="300.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="s14" layoutX="578.0" layoutY="300.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="s13" layoutX="552.0" layoutY="300.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="s12" layoutX="522.0" layoutY="300.0" prefHeight="25.0" prefWidth="30.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="s11" layoutX="497.0" layoutY="300.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="s10" layoutX="470.0" layoutY="300.0" prefHeight="25.0" prefWidth="30.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="s9" layoutX="445.0" layoutY="300.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="s8" layoutX="413.0" layoutY="300.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="s7" layoutX="387.0" layoutY="300.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="s6" layoutX="342.0" layoutY="300.0" prefHeight="25.0" prefWidth="46.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="s5" layoutX="288.0" layoutY="300.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="s4" layoutX="234.0" layoutY="300.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="s3" layoutX="180.0" layoutY="300.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="s2" layoutX="135.0" layoutY="300.0" prefHeight="25.0" prefWidth="46.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="s1" layoutX="83.0" layoutY="300.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="o26" layoutX="1008.0" layoutY="325.0" prefHeight="25.0" prefWidth="72.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="o25" layoutX="934.0" layoutY="325.0" prefHeight="25.0" prefWidth="72.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="o23" layoutX="836.0" layoutY="325.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="o24" layoutX="888.0" layoutY="325.0" prefHeight="25.0" prefWidth="46.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="o22" layoutX="806.0" layoutY="325.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="o21" layoutX="780.0" layoutY="325.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="o20" layoutX="748.0" layoutY="325.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="o19" layoutX="722.0" layoutY="325.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="o18" layoutX="692.0" layoutY="326.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="o17" layoutX="669.0" layoutY="325.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="o16" layoutX="638.0" layoutY="325.0" prefHeight="25.0" prefWidth="30.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="o15" layoutX="612.0" layoutY="325.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="o14" layoutX="578.0" layoutY="325.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="o13" layoutX="552.0" layoutY="325.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="o12" layoutX="522.0" layoutY="325.0" prefHeight="25.0" prefWidth="30.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="o11" layoutX="497.0" layoutY="325.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="o10" layoutX="470.0" layoutY="325.0" prefHeight="25.0" prefWidth="30.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="o9" layoutX="445.0" layoutY="325.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="o8" layoutX="413.0" layoutY="325.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="o7" layoutX="387.0" layoutY="325.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="o6" layoutX="342.0" layoutY="325.0" prefHeight="25.0" prefWidth="46.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="o5" layoutX="288.0" layoutY="325.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="o4" layoutX="234.0" layoutY="325.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="o3" layoutX="180.0" layoutY="325.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="o2" layoutX="135.0" layoutY="325.0" prefHeight="25.0" prefWidth="46.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="o1" layoutX="83.0" layoutY="325.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="n26" layoutX="1008.0" layoutY="350.0" prefHeight="25.0" prefWidth="72.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="n25" layoutX="934.0" layoutY="350.0" prefHeight="25.0" prefWidth="72.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="n23" layoutX="836.0" layoutY="350.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="n24" layoutX="888.0" layoutY="350.0" prefHeight="25.0" prefWidth="46.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="n22" layoutX="806.0" layoutY="350.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="n21" layoutX="780.0" layoutY="350.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="n20" layoutX="748.0" layoutY="350.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="n19" layoutX="722.0" layoutY="350.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="n18" layoutX="692.0" layoutY="350.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="n17" layoutX="669.0" layoutY="350.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="n16" layoutX="638.0" layoutY="350.0" prefHeight="25.0" prefWidth="30.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="n15" layoutX="612.0" layoutY="350.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="n14" layoutX="578.0" layoutY="350.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="n13" layoutX="552.0" layoutY="350.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="n12" layoutX="522.0" layoutY="350.0" prefHeight="25.0" prefWidth="30.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="n11" layoutX="497.0" layoutY="350.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="n10" layoutX="470.0" layoutY="350.0" prefHeight="25.0" prefWidth="30.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="n9" layoutX="445.0" layoutY="350.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="n8" layoutX="413.0" layoutY="350.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="n7" layoutX="387.0" layoutY="350.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="n6" layoutX="342.0" layoutY="350.0" prefHeight="25.0" prefWidth="46.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="n5" layoutX="288.0" layoutY="350.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="n4" layoutX="234.0" layoutY="350.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="n3" layoutX="180.0" layoutY="350.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="n2" layoutX="135.0" layoutY="350.0" prefHeight="25.0" prefWidth="46.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="n1" layoutX="83.0" layoutY="350.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="d26" layoutX="1008.0" layoutY="375.0" prefHeight="25.0" prefWidth="72.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="d25" layoutX="934.0" layoutY="375.0" prefHeight="25.0" prefWidth="72.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="d23" layoutX="836.0" layoutY="375.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="d24" layoutX="888.0" layoutY="375.0" prefHeight="25.0" prefWidth="46.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="d22" layoutX="806.0" layoutY="375.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="d21" layoutX="780.0" layoutY="375.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="d20" layoutX="748.0" layoutY="375.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="d19" layoutX="722.0" layoutY="375.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="d18" layoutX="692.0" layoutY="375.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="d17" layoutX="669.0" layoutY="375.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="d16" layoutX="638.0" layoutY="375.0" prefHeight="25.0" prefWidth="30.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="d15" layoutX="612.0" layoutY="375.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="d14" layoutX="578.0" layoutY="375.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="d13" layoutX="552.0" layoutY="375.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="d12" layoutX="522.0" layoutY="375.0" prefHeight="25.0" prefWidth="30.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="d11" layoutX="497.0" layoutY="375.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="d10" layoutX="470.0" layoutY="375.0" prefHeight="25.0" prefWidth="30.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="d9" layoutX="445.0" layoutY="375.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="d8" layoutX="413.0" layoutY="375.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="d7" layoutX="387.0" layoutY="375.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="d6" layoutX="342.0" layoutY="375.0" prefHeight="25.0" prefWidth="46.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="d5" layoutX="288.0" layoutY="375.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="d4" layoutX="234.0" layoutY="375.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="d3" layoutX="180.0" layoutY="375.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="d2" layoutX="135.0" layoutY="375.0" prefHeight="25.0" prefWidth="46.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="d1" layoutX="83.0" layoutY="375.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="z1" layoutX="82.0" layoutY="405.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="z2" layoutX="134.0" layoutY="405.0" prefHeight="25.0" prefWidth="46.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="z3" layoutX="179.0" layoutY="405.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="z4" layoutX="233.0" layoutY="405.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="z5" layoutX="287.0" layoutY="405.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="z6" layoutX="341.0" layoutY="405.0" prefHeight="25.0" prefWidth="46.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="z7" layoutX="386.0" layoutY="405.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="z8" layoutX="412.0" layoutY="405.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="z9" layoutX="444.0" layoutY="405.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="z10" layoutX="469.0" layoutY="405.0" prefHeight="25.0" prefWidth="30.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="z11" layoutX="496.0" layoutY="405.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="z12" layoutX="521.0" layoutY="405.0" prefHeight="25.0" prefWidth="30.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="z13" layoutX="551.0" layoutY="405.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="z14" layoutX="577.0" layoutY="405.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="z15" layoutX="611.0" layoutY="405.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="z16" layoutX="637.0" layoutY="405.0" prefHeight="25.0" prefWidth="30.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="z17" layoutX="668.0" layoutY="405.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="z18" layoutX="691.0" layoutY="405.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="z19" layoutX="721.0" layoutY="405.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="z20" layoutX="747.0" layoutY="405.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="z21" layoutX="779.0" layoutY="405.0" prefHeight="25.0" prefWidth="26.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="z22" layoutX="805.0" layoutY="405.0" prefHeight="25.0" prefWidth="32.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="z24" layoutX="887.0" layoutY="405.0" prefHeight="25.0" prefWidth="46.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="z23" layoutX="835.0" layoutY="405.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="z25" layoutX="933.0" layoutY="405.0" prefHeight="25.0" prefWidth="72.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <TextField fx:id="z26" layoutX="1007.0" layoutY="405.0" prefHeight="25.0" prefWidth="72.0">
+         <font>
+            <Font name="Arial Unicode MS" size="9.0" />
+         </font></TextField>
+      <Button fx:id="can1" layoutX="1082.0" layoutY="104.0" mnemonicParsing="false" onAction="#can1" prefHeight="25.0" prefWidth="24.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/Remove.png" />
+               </source>
+            </ImageInput>
+         </effect></Button>
+      <Button fx:id="can2" layoutX="1082.0" layoutY="128.0" mnemonicParsing="false" onAction="#can2" prefHeight="25.0" prefWidth="24.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/Remove.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Button fx:id="can8" layoutX="1082.0" layoutY="275.0" mnemonicParsing="false" onAction="#can8" prefHeight="25.0" prefWidth="24.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/Remove.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Button fx:id="can9" layoutX="1082.0" layoutY="300.0" mnemonicParsing="false" onAction="#can9" prefHeight="25.0" prefWidth="17.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/Remove.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Button fx:id="can10" layoutX="1082.0" layoutY="325.0" mnemonicParsing="false" onAction="#can10" prefHeight="25.0" prefWidth="18.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/Remove.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Button fx:id="can11" layoutX="1082.0" layoutY="350.0" mnemonicParsing="false" onAction="#can11" prefHeight="25.0" prefWidth="15.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/Remove.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Button fx:id="can12" layoutX="1082.0" layoutY="375.0" mnemonicParsing="false" onAction="#can12" prefHeight="25.0" prefWidth="13.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/Remove.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Button fx:id="save" layoutX="1083.0" layoutY="405.0" mnemonicParsing="false" onAction="#save" prefHeight="25.0" prefWidth="19.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/Save_24x24.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Button fx:id="can7" layoutX="1082.0" layoutY="250.0" mnemonicParsing="false" onAction="#can7" prefHeight="25.0" prefWidth="24.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/Remove.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Button fx:id="can6" layoutX="1082.0" layoutY="225.0" mnemonicParsing="false" onAction="#can6" prefHeight="25.0" prefWidth="24.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/Remove.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Button fx:id="can5" layoutX="1082.0" layoutY="200.0" mnemonicParsing="false" onAction="#can5" prefHeight="25.0" prefWidth="24.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/Remove.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Button fx:id="can4" layoutX="1082.0" layoutY="175.0" mnemonicParsing="false" onAction="#can4" prefHeight="25.0" prefWidth="24.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/Remove.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Button fx:id="can3" layoutX="1082.0" layoutY="150.0" mnemonicParsing="false" onAction="#can3" prefHeight="25.0" prefWidth="24.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/Remove.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <TextField alignment="CENTER" editable="false" layoutX="-1.0" layoutY="405.0" prefHeight="25.0" prefWidth="82.0" text="Total" />
+      <ImageView fitHeight="70.0" fitWidth="72.0" layoutX="1090.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagenes/minsa.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import Validaciones.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="619.0" prefWidth="1011.0" styleClass="backgroundsuave" stylesheets="@../Estilos/Fondosuave.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.RegPacController">
+   <children>
+      <TextField fx:id="Nombre" layoutX="34.0" layoutY="91.0" prefHeight="25.0" prefWidth="112.0" styleClass="text-field" stylesheets="@../Estilos/JMetroLightTheme.css" />
+      <TextField fx:id="cel" layoutX="34.0" layoutY="157.0" prefHeight="25.0" prefWidth="112.0" styleClass="text-field">
+         <stylesheets>
+            <URL value="@../Estilos/JMetroLightTheme.css" />
+            <URL value="@../Estilos/Tooltip.css" />
+         </stylesheets></TextField>
+      <LetterTextField fx:id="apellidos" layoutX="166.0" layoutY="91.0" styleClass="text-field" stylesheets="@../Estilos/JMetroLightTheme.css" />
+      <TextField fx:id="ciudad" layoutX="35.0" layoutY="220.0" prefHeight="25.0" prefWidth="112.0" styleClass="text-field" stylesheets="@../Estilos/JMetroLightTheme.css" />
+      <TextField fx:id="dir" layoutX="167.0" layoutY="221.0" styleClass="text-field" stylesheets="@../Estilos/JMetroLightTheme.css" />
+      <TextField fx:id="Noe" layoutX="345.0" layoutY="91.0" styleClass="text-field" stylesheets="@../Estilos/JMetroLightTheme.css" />
+      <TextField fx:id="depar" layoutX="168.0" layoutY="159.0" styleClass="text-field" stylesheets="@../Estilos/JMetroLightTheme.css" />
+      <TextField fx:id="NoCed" layoutX="520.0" layoutY="157.0" styleClass="text-field" stylesheets="@../Estilos/JMetroLightTheme.css" />
+      <TextField fx:id="Edad" layoutX="343.0" layoutY="157.0" styleClass="text-field" stylesheets="@../Estilos/JMetroLightTheme.css" />
+      <TableView fx:id="tablePac" layoutX="51.0" layoutY="323.0" prefHeight="219.0" prefWidth="939.0">
+        <columns>
+          <TableColumn fx:id="columnoe" prefWidth="102.0" text="No. Expediente" />
+          <TableColumn fx:id="columnom" prefWidth="230.0" text="Nombres" />
+            <TableColumn fx:id="columape" prefWidth="216.0" text="Apellidos" />
+            <TableColumn fx:id="columnedad" prefWidth="137.0" text="Edad" />
+            <TableColumn fx:id="columsala" prefWidth="251.0" text="Sala" />
+        </columns>
+         <contextMenu>
+            <ContextMenu fx:id="conmenu">
+              <items>
+                <MenuItem fx:id="menmos" mnemonicParsing="false" onAction="#Evento" text="Mostrar Paciente" />
+                  <MenuItem fx:id="menmodi" mnemonicParsing="false" onAction="#MetodoClick" text="Modificar Paciente" />
+                  <MenuItem fx:id="meneli" mnemonicParsing="false" onAction="#elim" text="Eliminar Paciente" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </TableView>
+      <Label layoutX="36.0" layoutY="59.0" text="Nombres" textFill="#000000db" />
+      <Label layoutX="349.0" layoutY="60.0" text="No. Expediente" textFill="#000000db" />
+      <Label layoutX="523.0" layoutY="60.0" text="Sexo" textFill="#000000db" />
+      <ComboBox fx:id="Combosexo" layoutX="520.0" layoutY="92.0" prefWidth="150.0" stylesheets="@../Estilos/JMetroLightTheme.css" visibleRowCount="2" />      
+      <Label layoutX="804.0" layoutY="69.0" text="Sala" />
+      <ComboBox fx:id="Combosala" layoutX="804.0" layoutY="104.0" prefWidth="150.0" stylesheets="@../Estilos/JMetroLightTheme.css" />
+      <Label layoutX="34.0" layoutY="133.0" text="Telefono o Celular" textFill="#000000db" />
+      <Button fx:id="add" layoutX="155.0" layoutY="566.0" mnemonicParsing="false" onAction="#add" prefHeight="35.0" prefWidth="131.0" styleClass="btnAgregar" stylesheets="@../Estilos/Botones.css" text="       Agregar">
+         <tooltip>
+            <Tooltip text="aqui" />
+         </tooltip></Button>
+      <Label layoutX="345.0" layoutY="133.0" text="Edad" textFill="#000000db" />
+      <Label layoutX="169.0" layoutY="59.0" text="Apellidos" textFill="#000000db" />
+      <Label layoutX="522.0" layoutY="132.0" text="NoCedula" textFill="#000000db" />
+      <Label layoutX="39.0" layoutY="196.0" text="Tipo de Sangre" textFill="#000000db" />
+      <Label layoutX="173.0" layoutY="133.0" text="Departamento" textFill="#000000db" />
+      <Label layoutX="169.0" layoutY="197.0" text="Direccion" textFill="#000000db" />
+      <Button fx:id="modif" layoutX="293.0" layoutY="566.0" mnemonicParsing="false" onAction="#mod" prefHeight="35.0" prefWidth="143.0" styleClass="btnmodificar" stylesheets="@../Estilos/Botones.css" text="       Modificar" />
+      <Button fx:id="elim" layoutX="446.0" layoutY="565.0" mnemonicParsing="false" onAction="#elim" prefHeight="35.0" prefWidth="131.0" styleClass="btnborrar" stylesheets="@../Estilos/Botones.css" text="       Eliminar" />
+      <Button fx:id="buscar" layoutX="869.0" layoutY="246.0" mnemonicParsing="false" onAction="#find" prefHeight="17.0" prefWidth="26.0" styleClass="btnbuscar" stylesheets="@../Estilos/Botones.css" text="       Buscar">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/Find_16x16.png" />
+               </source>
+            </ImageInput>
+         </effect></Button>
+      <Button fx:id="cancel" layoutX="826.0" layoutY="246.0" mnemonicParsing="false" onAction="#cancel" prefHeight="25.0" prefWidth="27.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/Cancel_16x16.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Button fx:id="save" layoutX="778.0" layoutY="246.0" mnemonicParsing="false" onAction="#save" prefHeight="25.0" prefWidth="26.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/Save_24x24.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Button fx:id="list" layoutX="587.0" layoutY="563.0" mnemonicParsing="false" onAction="#listar" prefHeight="35.0" prefWidth="121.0" styleClass="btnListar" stylesheets="@../Estilos/Botones.css" text="       Listar" />
+      <Separator layoutX="673.0" layoutY="26.0" orientation="VERTICAL" prefHeight="242.0" prefWidth="14.0">
+         <effect>
+            <ColorAdjust brightness="-0.5" />
+         </effect></Separator>
+      <Separator layoutX="23.0" layoutY="266.0" prefHeight="5.0" prefWidth="656.0">
+         <effect>
+            <ColorAdjust brightness="-0.5" />
+         </effect></Separator>
+      <Separator layoutX="156.0" layoutY="26.0" prefHeight="3.0" prefWidth="523.0">
+         <effect>
+            <ColorAdjust brightness="-0.5" />
+         </effect></Separator>
+      <Separator layoutX="18.0" layoutY="28.0" orientation="VERTICAL" prefHeight="241.0" prefWidth="14.0">
+         <effect>
+            <ColorAdjust brightness="-0.5" />
+         </effect></Separator>
+      <Label layoutX="33.0" layoutY="12.0" text="Datos Personales" textFill="#36b9dd">
+         <font>
+            <Font name="Cambria Math" size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="714.0" layoutY="27.0" orientation="VERTICAL" prefHeight="202.0" prefWidth="14.0">
+         <effect>
+            <ColorAdjust brightness="-0.5" />
+         </effect></Separator>
+      <Label layoutX="724.0" layoutY="11.0" text="Informacion Especifica" textFill="#36b9dd">
+         <font>
+            <Font name="Cambria Math" size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="970.0" layoutY="27.0" orientation="VERTICAL" prefHeight="202.0" prefWidth="14.0">
+         <effect>
+            <ColorAdjust brightness="-0.5" />
+         </effect></Separator>
+      <Separator layoutX="721.0" layoutY="227.0" prefHeight="3.0" prefWidth="254.0">
+         <effect>
+            <ColorAdjust brightness="-0.5" />
+         </effect></Separator>
+      <Separator layoutX="873.0" layoutY="26.0" prefHeight="3.0" prefWidth="103.0">
+         <effect>
+            <ColorAdjust brightness="-0.5" />
+         </effect></Separator>
+      <Label layoutX="47.0" layoutY="290.0" text="Pacientes Encontrados" textFill="#0d99e4">
+         <font>
+            <Font name="Cambria Math" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="714.0" layoutY="574.0" text="Buscar Por:" />
+      <RadioButton fx:id="rNoe" layoutX="780.0" layoutY="558.0" mnemonicParsing="false" onAction="#rNoe" text="No. Expediente" />
+      <RadioButton fx:id="rNom" layoutX="780.0" layoutY="581.0" mnemonicParsing="false" onAction="#rNom" text="Nombres" />
+      <TextField fx:id="txtb" layoutX="890.0" layoutY="568.0" prefHeight="25.0" prefWidth="103.0" />
+      <Label fx:id="lblerror" layoutX="317.0" layoutY="290.0" prefHeight="17.0" prefWidth="274.0" text="Seleccione Correctamente la Fila" textFill="#f50000">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import Validaciones.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="700.0" prefWidth="891.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.OrinaController">
+   <children>
+      <Button fx:id="NuevoExa" layoutX="537.0" layoutY="95.0" mnemonicParsing="false" onAction="#NuevoExa" prefHeight="31.0" prefWidth="149.0" styleClass="btnAgregar" stylesheets="@../Estilos/Botones.css" text="Nuevo Examen" textAlignment="RIGHT">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="16.0" layoutY="1.0" prefHeight="26.0" prefWidth="149.0" text="Datos Personales  :" textFill="#149fe5">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_LEFT" layoutX="538.0" layoutY="22.0" prefHeight="26.0" prefWidth="149.0" text="Edad:" textFill="#141d22" textOverrun="WORD_ELLIPSIS" />
+      <Label alignment="BOTTOM_LEFT" layoutX="188.0" layoutY="26.0" prefHeight="26.0" prefWidth="149.0" text="Sexo:" textFill="#141d22" textOverrun="WORD_ELLIPSIS" />
+      <TextField fx:id="EdadO" layoutX="537.0" layoutY="55.0" />
+      <TextField fx:id="SexoO" layoutX="187.0" layoutY="59.0" prefHeight="25.0" prefWidth="171.0" />
+      <Label layoutX="34.0" layoutY="143.0" prefHeight="26.0" prefWidth="208.0" text="Tipos De Examen Orina :" textFill="#149fe5">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_LEFT" layoutX="24.0" layoutY="27.0" prefHeight="26.0" prefWidth="149.0" text="No. Expediente :" textFill="#141d22" textOverrun="WORD_ELLIPSIS" />
+      <TabPane layoutX="21.0" layoutY="171.0" prefHeight="334.0" prefWidth="742.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Seleccionar Examen">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tableexa" layoutX="5.0" layoutY="71.0" prefHeight="219.0" prefWidth="729.0">
+                           <columns>
+                              <TableColumn fx:id="columnoe1" prefWidth="93.0" text="No. Expediente" />
+                              <TableColumn fx:id="columnom" prefWidth="234.0" text="Nombre" />
+                              <TableColumn fx:id="columcat" prefWidth="132.0" text="Categoria" />
+                              <TableColumn fx:id="columtipo" prefWidth="156.0" text="Tipo de Examen" />
+                              <TableColumn fx:id="columestado" prefWidth="113.0" text="Estado" />
+                           </columns>
+                           <contextMenu>
+                              <ContextMenu fx:id="conmenu1">
+                                 <items>
+                                    <MenuItem fx:id="select" mnemonicParsing="false" onAction="#select" text="Seleccionar Examen" />
+                                 </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </TableView>
+                        <Label layoutX="9.0" layoutY="25.0" prefHeight="26.0" prefWidth="208.0" text="Seleccionar Examen :" textFill="#149fe5">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Lista de Resultados">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="252.0" prefWidth="632.0">
+                     <children>
+                        <TableView fx:id="TablaOrina" layoutX="3.0" layoutY="65.0" prefHeight="230.0" prefWidth="736.0">
+                          <columns>
+                            <TableColumn fx:id="columnoe" prefWidth="89.0" text="No.Expediente" />
+                            <TableColumn fx:id="columpaciente" prefWidth="111.0" text="Paciente" />
+                              <TableColumn fx:id="colummedico" prefWidth="107.0" text="Medico" />
+                              <TableColumn fx:id="columresultado" prefWidth="140.0" text="Resultado" />
+                              <TableColumn fx:id="columobservaciones" minWidth="5.0" prefWidth="288.0" text="Observaciones" />
+                          </columns>
+                           <contextMenu>
+                              <ContextMenu fx:id="conmenu">
+                                <items>
+                                  <MenuItem fx:id="menmos" mnemonicParsing="false" onAction="#Evento" text="Mostrar Examen" />
+                                    <MenuItem fx:id="menmodi" mnemonicParsing="false" onAction="#MetodoClick" text="ModificarExamen" />
+                                </items>
+                              </ContextMenu>
+                           </contextMenu>
+                        </TableView>
+                        <Button fx:id="listO" layoutX="5.0" layoutY="22.0" mnemonicParsing="false" onAction="#listarO" prefHeight="30.0" prefWidth="735.0" styleClass="btnListar" stylesheets="@../Estilos/Botones.css" text="Listar Resultados" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Examen Fisico Quimico">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <LetterTextField fx:id="color" layoutX="111.0" layoutY="24.0" />
+                        <LetterTextField fx:id="aspecto" layoutX="111.0" layoutY="64.0" />
+                        <NumberTextField fx:id="densidad" layoutX="111.0" layoutY="107.0" />
+                        <NumberTextField fx:id="ph" layoutX="111.0" layoutY="149.0" />
+                        <NumberTextField fx:id="proteina" layoutX="111.0" layoutY="183.0" />
+                        <NumberTextField fx:id="glucosa" layoutX="111.0" layoutY="222.0" />
+                        <NumberTextField fx:id="sangreoculta" layoutX="111.0" layoutY="258.0" />
+                        <Label layoutX="59.0" layoutY="28.0" text="Color :" />
+                        <Label layoutX="49.0" layoutY="68.0" text="Aspecto :" />
+                        <Label layoutX="45.0" layoutY="111.0" text="Densidad :" />
+                        <Label layoutX="76.0" layoutY="153.0" text="PH :" />
+                        <Label layoutX="48.0" layoutY="187.0" text="Proteina :" />
+                        <Label layoutX="49.0" layoutY="226.0" text="Glucosa :" />
+                        <Label layoutX="22.0" layoutY="262.0" text="Sangre Oculta :" />
+                        <Label layoutX="360.0" layoutY="68.0" text="Uribilinogeno  :" />
+                        <Label layoutX="366.0" layoutY="28.0" text="Cuerpos Cet :" />
+                        <NumberTextField fx:id="Uribilinogeno" layoutX="461.0" layoutY="64.0" />
+                        <NumberTextField fx:id="cuerposcet" layoutX="461.0" layoutY="24.0" />
+                        <NumberTextField fx:id="bilirrubina" layoutX="461.0" layoutY="107.0" />
+                        <Label layoutX="380.0" layoutY="111.0" text="Bilirrubina :" />
+                        <NumberTextField fx:id="nitritos" layoutX="461.0" layoutY="149.0" />
+                        <Label layoutX="394.0" layoutY="153.0" text="Nitritos :" />
+                        <NumberTextField fx:id="hemoglobinas" layoutX="461.0" layoutY="183.0" />
+                        <Label layoutX="363.0" layoutY="187.0" text="Hemoglobina :" />
+                        <NumberTextField fx:id="esterasa" layoutX="461.0" layoutY="222.0" />
+                        <Label layoutX="393.0" layoutY="226.0" text="Esterasa :" />
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Examen Microscopico">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="306.0" prefWidth="742.0">
+                     <children>
+                        <NumberTextField fx:id="leucocitarios" layoutX="135.0" layoutY="97.0" />
+                        <NumberTextField fx:id="hialinos" layoutX="135.0" layoutY="178.0" />
+                        <Label layoutX="431.0" layoutY="58.0" text="Leucocitos :" />
+                        <Label layoutX="434.0" layoutY="23.0" text="Hematies :" />
+                        <Label layoutX="68.0" layoutY="23.0" text="Cilindros :" />
+                        <Label layoutX="394.0" layoutY="93.0" text="Celulas Epiteliales :" />
+                        <Label layoutX="57.0" layoutY="182.0" text="Hialinos :" />
+                        <Label layoutX="444.0" layoutY="126.0" text="Cristales :" />
+                        <Label layoutX="53.0" layoutY="145.0" text="Hematicos :" />
+                        <Label layoutX="57.0" layoutY="101.0" text="Leucocitarios :" />
+                        <Label layoutX="64.0" layoutY="58.0" text="Granulosos :" />
+                        <NumberTextField fx:id="celulasepi" layoutX="508.0" layoutY="89.0" />
+                        <NumberTextField fx:id="leucocitos" layoutX="508.0" layoutY="55.0" />
+                        <NumberTextField fx:id="hematies" layoutX="508.0" layoutY="19.0" />
+                        <NumberTextField fx:id="cristales" layoutX="508.0" layoutY="122.0" />
+                        <NumberTextField fx:id="hematicos" layoutX="135.0" layoutY="141.0" />
+                        <NumberTextField fx:id="cilindros" layoutX="135.0" layoutY="19.0" />
+                        <NumberTextField fx:id="granulosos" layoutX="135.0" layoutY="54.0" />
+                        <NumberTextField fx:id="parasito" layoutX="508.0" layoutY="154.0" />
+                        <Label layoutX="408.0" layoutY="158.0" text="Parasitologicos :" />
+                        <NumberTextField fx:id="otros" layoutX="508.0" layoutY="191.0" />
+                        <Label layoutX="456.0" layoutY="195.0" text="Otros :" />
+                        <TextField fx:id="observaciones" layoutX="113.0" layoutY="216.0" prefHeight="66.0" prefWidth="480.0" />
+                        <Label layoutX="14.0" layoutY="229.0" text="Observaciones :" />
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+      <Button fx:id="BuscarExa" layoutX="427.0" layoutY="95.0" mnemonicParsing="false" onAction="#find" prefHeight="15.0" prefWidth="29.0" styleClass="btnbuscar" stylesheets="@../Estilos/Botones.css" text="Buscar">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/busqueda2.png" />
+               </source>
+            </ImageInput>
+         </effect></Button>
+      <Button fx:id="guardarO" layoutX="464.0" layoutY="96.0" mnemonicParsing="false" onAction="#GuardarO" prefHeight="26.0" prefWidth="24.0" styleClass="btnpacientes" stylesheets="@../Estilos/Botones.css" text="Guardar">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/Save_24x24.png" />
+               </source>
+            </ImageInput>
+         </effect></Button>
+      <Button fx:id="cancelarO" layoutX="494.0" layoutY="94.0" mnemonicParsing="false" onAction="#cancelarO" prefHeight="25.0" prefWidth="24.0" text="Cancelar">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/Cancel_16x16.png" />
+               </source>
+            </ImageInput>
+         </effect></Button>
+      <TextField fx:id="resultado" layoutX="23.0" layoutY="107.0" />
+      <Label alignment="BOTTOM_LEFT" layoutX="25.0" layoutY="88.0" prefHeight="17.0" prefWidth="149.0" text="Resultado:" textFill="#141d22" textOverrun="WORD_ELLIPSIS" />
+      <TextField fx:id="NoEx" layoutX="24.0" layoutY="60.0" prefHeight="25.0" prefWidth="143.0" />
+      <TextField fx:id="NombrePaciente" layoutX="375.0" layoutY="57.0" prefHeight="25.0" prefWidth="143.0" />
+      <Label alignment="BOTTOM_LEFT" layoutX="375.0" layoutY="24.0" prefHeight="26.0" prefWidth="149.0" text="Nombre Paciente :" textFill="#141d22" textOverrun="WORD_ELLIPSIS" />
+      <RadioButton fx:id="Nombre" layoutX="290.0" layoutY="115.0" mnemonicParsing="false" onAction="#rNom" text="Nombre Paciente" />
+      <RadioButton fx:id="Expediente" layoutX="291.0" layoutY="93.0" mnemonicParsing="false" onAction="#rNoe" text="No. Expediente" />
+      <Text layoutX="188.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buscar Por:" />
+      <TextField fx:id="buscarR" layoutX="188.0" layoutY="106.0" prefHeight="25.0" prefWidth="86.0" />
+      <TextArea fx:id="idres" editable="false" layoutX="24.0" layoutY="491.0" prefHeight="200.0" prefWidth="721.0" />
+      <Button fx:id="idclean" layoutX="763.0" layoutY="536.0" mnemonicParsing="false" onAction="#clean0" prefHeight="93.0" prefWidth="58.0" text="Limpiar" />
+   </children>
+</AnchorPane>

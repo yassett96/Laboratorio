@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="764.0" prefWidth="1366.0" styleClass="background" stylesheets="@../Estilos/estilo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.PrincipalController">
+   <children>
+      <ImageView fitHeight="253.0" fitWidth="236.0" layoutX="1111.0" layoutY="441.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagenes/calendarwidget-spiral.png" />
+         </image>
+      </ImageView>
+      <MenuBar nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="1365.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Sistema">
+            <items>
+                  <MenuItem fx:id="catvarios" mnemonicParsing="false" onAction="#Control" text="Control De Examenes" />
+                  <MenuItem mnemonicParsing="false" onAction="#ses" text="Cerrar Sesión" />
+                  <MenuItem mnemonicParsing="false" onAction="#cerrar" text="Salir" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Registros">
+            <items>
+              <MenuItem fx:id="catmed" mnemonicParsing="false" onAction="#Medicos" text="Medicos" />
+                  <MenuItem fx:id="catpac" mnemonicParsing="false" onAction="#RegPac" text="Pacientes" />
+                  <MenuItem fx:id="catpro" mnemonicParsing="false" onAction="#Proveedores" text="Proveedores" />
+                  <MenuItem fx:id="catprod" mnemonicParsing="false" onAction="#Productos" text="Productos" />
+                  <MenuItem fx:id="catuser" mnemonicParsing="false" onAction="#Usuarios" text="Usuarios del Sistema" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Reportes">
+            <items>
+                  <Menu mnemonicParsing="false" text="Informes Historicos">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#ReporteEmb" text="Examenes Embarazo Del Mes" />
+                        <MenuItem mnemonicParsing="false" onAction="#ReporteOrina" text="Examenes Orina Del Mes" />
+                        <MenuItem mnemonicParsing="false" onAction="#ReporteHeces" text="Examenes Heces Del Mes" />
+                        <MenuItem mnemonicParsing="false" onAction="#ReporteVarios" text="Examenes Varios Del Mes" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Catálogos">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#ReporteMed" text="Medicos" />
+                        <MenuItem mnemonicParsing="false" onAction="#ReportePac" text="Pacientes" />
+                        <MenuItem mnemonicParsing="false" onAction="#ReporteUser" text="Usuarios del Sistema" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Reportes Especiales">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#ReporteKardex" text="Kardex Consolidado VIH" />
+                        <MenuItem mnemonicParsing="false" onAction="#ReporteMX" text="Consumo De RX" />
+                        <MenuItem mnemonicParsing="false" onAction="#HistorialPac" text="Historial del Paciente" />
+                    </items>
+                  </Menu>
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Herramientas">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#Calculadora" text="Calculadora" />
+                  <Menu mnemonicParsing="false" text="Papelera">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#papelPac" text="Pacientes" />
+                        <MenuItem mnemonicParsing="false" onAction="#papelMed" text="Medicos" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Aplicaciones de Microsoft">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#Word" text="Microsoft Office Word" />
+                        <MenuItem mnemonicParsing="false" onAction="#Excel" text="Microsoft Office Excel" />
+                        <MenuItem mnemonicParsing="false" onAction="#Point" text="Microsoft Office Power Point" />
+                    </items>
+                  </Menu>
+                  <MenuItem mnemonicParsing="false" onAction="#Acerca" text="Acerca de..." />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="40.0" layoutX="-1.0" layoutY="24.0" stroke="BLACK" strokeType="INSIDE" width="1366.0">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.01904761904761909" endY="1.0" startX="1.0" startY="0.5952380952380952">
+               <stops>
+                  <Stop color="#53595e" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill></Rectangle>
+      <Button fx:id="btnUser" alignment="TOP_CENTER" layoutX="299.0" layoutY="30.0" mnemonicParsing="false" onAction="#Usuarios" prefHeight="25.0" prefWidth="33.0" styleClass="zoom" stylesheets="@../Estilos/estilo.css" text="Button" textAlignment="CENTER">
+         <effect>
+            <ImageInput y="-2.0">
+               <source>
+                  <Image url="@../Imagenes/01clientes.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Separator layoutX="58.0" layoutY="28.0" orientation="VERTICAL" prefHeight="34.0" prefWidth="13.0" />
+      <Separator layoutX="113.0" layoutY="28.0" orientation="VERTICAL" prefHeight="34.0" prefWidth="13.0" />
+      <Button layoutX="267.0" layoutY="385.0" mnemonicParsing="false" text="Button">
+         <effect>
+            <ImageInput />
+         </effect>
+      </Button>
+      <Separator layoutX="172.0" layoutY="28.0" orientation="VERTICAL" prefHeight="34.0" prefWidth="13.0" />
+      <Separator layoutX="229.0" layoutY="29.0" orientation="VERTICAL" prefHeight="34.0" prefWidth="13.0" />
+      <Separator layoutX="284.0" layoutY="27.0" orientation="VERTICAL" prefHeight="34.0" prefWidth="13.0" />
+      <Button fx:id="btnMed" layoutX="241.0" layoutY="27.0" mnemonicParsing="false" onAction="#Medicos" prefHeight="25.0" prefWidth="33.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/doctor.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Separator layoutX="338.0" layoutY="27.0" orientation="VERTICAL" prefHeight="34.0" prefWidth="13.0" />
+      <Separator layoutX="383.0" layoutY="27.0" orientation="VERTICAL" prefHeight="34.0" prefWidth="13.0" />
+      <Button fx:id="BtRegPac" layoutX="19.0" layoutY="30.0" mnemonicParsing="false" onAction="#RegPac" prefHeight="34.0" prefWidth="33.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/patient.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Button fx:id="BtRegExa" layoutX="74.0" layoutY="26.0" mnemonicParsing="false" onAction="#RegExa" prefHeight="34.0" prefWidth="42.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/examen.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="34.0" layoutX="-1.0" layoutY="671.0" stroke="BLACK" strokeType="INSIDE" width="243.0" />
+      <ImageView fx:id="ivima" fitHeight="200.0" fitWidth="240.0" layoutX="1.0" layoutY="472.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="user" layoutX="5.0" layoutY="680.0" text="Usuario: NONE" />
+      <Label fx:id="ldia" layoutX="1184.0" layoutY="647.0" text="Viernes" textFill="WHITE">
+         <font>
+            <Font name="Verdana" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="ldiaw" layoutX="1166.0" layoutY="510.0" prefHeight="97.0" prefWidth="104.0" text="22" textFill="RED">
+         <font>
+            <Font name="Impact" size="95.0" />
+         </font>
+      </Label>
+      <Label fx:id="lmes" layoutX="1220.0" layoutY="486.0" text="Diciembre" wrapText="true">
+         <font>
+            <Font name="Verdana" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="laño" layoutX="1133.0" layoutY="474.0" text="2016" wrapText="true">
+         <font>
+            <Font name="Verdana" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnVIH" layoutX="349.0" layoutY="30.0" mnemonicParsing="false" onAction="#VIH" prefHeight="25.0" prefWidth="33.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/vih.png" />
+               </source>
+            </ImageInput>
+         </effect></Button>
+      <Separator layoutX="435.0" layoutY="27.0" orientation="VERTICAL" prefHeight="34.0" prefWidth="13.0" />
+      <Button fx:id="btnProv" layoutX="394.0" layoutY="24.0" mnemonicParsing="false" onAction="#Proveedores" prefHeight="40.0" prefWidth="42.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/Socios.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Button fx:id="btnPro" layoutX="449.0" layoutY="28.0" mnemonicParsing="false" onAction="#Productos" prefHeight="34.0" prefWidth="33.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/reactivo.png" />
+               </source>
+            </ImageInput>
+         </effect></Button>
+      <Separator layoutX="483.0" layoutY="27.0" orientation="VERTICAL" prefHeight="34.0" prefWidth="13.0" />
+      <Button fx:id="btnCita" layoutX="131.0" layoutY="26.0" mnemonicParsing="false" onAction="#Cita" prefHeight="34.0" prefWidth="33.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/citaprevia.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Button fx:id="btnControl" layoutX="191.0" layoutY="28.0" mnemonicParsing="false" onAction="#Control" prefHeight="34.0" prefWidth="33.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/varios.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

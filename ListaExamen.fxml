@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="241.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXML.ListaExamenController">
+   <children>
+      <TableView fx:id="tableexa" layoutX="7.0" layoutY="10.0" prefHeight="219.0" prefWidth="825.0">
+         <columns>
+            <TableColumn fx:id="columnoe" prefWidth="188.0" text="No. Expediente" />
+            <TableColumn fx:id="columnom" prefWidth="101.0" text="Nombre" />
+            <TableColumn fx:id="columcat" prefWidth="191.0" text="Categoria" />
+            <TableColumn fx:id="columtipo" prefWidth="212.0" text="Tipo de Examen" />
+            <TableColumn fx:id="columestado" prefWidth="133.0" text="Estado" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

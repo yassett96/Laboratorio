@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import Validaciones.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="561.0" prefWidth="727.0" stylesheets="@../Estilos/Fondosuave.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.VariosController">
+   <children>
+      <Button fx:id="add" layoutX="22.0" layoutY="510.0" mnemonicParsing="false" onAction="#add" prefHeight="35.0" prefWidth="102.0" styleClass="btnAgregar" stylesheets="@../Estilos/Botones.css" text="       Agregar" />
+      <Button fx:id="listar" layoutX="149.0" layoutY="510.0" mnemonicParsing="false" onAction="#listar" prefHeight="35.0" prefWidth="102.0" styleClass="btnListar" stylesheets="@../Estilos/Botones.css" text="       Listar" />
+      <TableView fx:id="tablev" layoutX="19.0" layoutY="299.0" prefHeight="200.0" prefWidth="682.0">
+        <columns>
+          <TableColumn fx:id="cln" prefWidth="157.0" text="Nombre Completo" />
+          <TableColumn fx:id="cle" prefWidth="151.0" text="Examen Practicado" />
+            <TableColumn fx:id="clf" prefWidth="149.0" text="Observaciones" />
+            <TableColumn fx:id="clr" prefWidth="224.0" text="Resultado" />
+        </columns>
+         <contextMenu>
+            <ContextMenu fx:id="conmenu">
+              <items>
+                <MenuItem fx:id="menmos" mnemonicParsing="false" onAction="#Evento" text="Mostrar Registro" />
+                  <MenuItem fx:id="menmodi" mnemonicParsing="false" onAction="#MetodoClick" text="Modificar Registro" />
+                  <MenuItem mnemonicParsing="false" onAction="#report" text="Generar Reporte" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </TableView>
+      <Button fx:id="cancel" layoutX="600.0" layoutY="75.0" mnemonicParsing="false" onAction="#cancel" prefHeight="25.0" prefWidth="23.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/Cancel_16x16.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Button fx:id="save" layoutX="572.0" layoutY="75.0" mnemonicParsing="false" onAction="#save" prefHeight="25.0" prefWidth="24.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/Save_24x24.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Button fx:id="find" layoutX="631.0" layoutY="73.0" mnemonicParsing="false" onAction="#find" prefHeight="25.0" prefWidth="24.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/Find_16x16.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <TextField fx:id="obs" layoutX="185.0" layoutY="94.0" />
+      <TextField fx:id="res" layoutX="18.0" layoutY="96.0" />
+      <Label layoutX="185.0" layoutY="68.0" text="Observaciones" />
+      <Label layoutX="18.0" layoutY="70.0" text="Resultado" />
+      <TextField fx:id="apellidos" layoutX="257.0" layoutY="38.0" />
+      <TextField fx:id="Nombres" layoutX="108.0" layoutY="38.0" prefHeight="25.0" prefWidth="138.0" />
+      <Label layoutX="257.0" layoutY="14.0" text="Apelidos" />
+      <Label layoutX="108.0" layoutY="14.0" text="Nombres" />
+      <Label layoutX="15.0" layoutY="11.0" text="No. Expediente" />
+      <TextField fx:id="Noe" layoutX="15.0" layoutY="38.0" prefHeight="25.0" prefWidth="81.0" />
+      <Label layoutX="417.0" layoutY="13.0" text="Categoria " />
+      <Label layoutX="574.0" layoutY="13.0" text="Tipo de Examen" />
+      <TextField fx:id="cc" layoutX="415.0" layoutY="37.0" />
+      <TextField fx:id="ct" layoutX="572.0" layoutY="36.0" />
+      <TextField fx:id="txtb" layoutX="425.0" layoutY="71.0" prefHeight="25.0" prefWidth="85.0" />
+      <RadioButton fx:id="rNom" layoutX="349.0" layoutY="104.0" mnemonicParsing="false" onAction="#rNom" text="Nombre" />
+      <RadioButton fx:id="rNoe" layoutX="423.0" layoutY="104.0" mnemonicParsing="false" onAction="#rNoe" text="No. Expediente" />
+      <Label layoutX="349.0" layoutY="74.0" text="Buscar Por:" />
+      <TableView fx:id="tableexa" layoutX="18.0" layoutY="147.0" prefHeight="138.0" prefWidth="682.0">
+         <columns>
+            <TableColumn fx:id="columnoe1" prefWidth="92.0" text="No. Expediente" />
+            <TableColumn fx:id="columnom1" prefWidth="194.0" text="Nombre" />
+            <TableColumn fx:id="columcat" prefWidth="135.0" text="Categoria" />
+            <TableColumn fx:id="columtipo" prefWidth="155.0" text="Tipo de Examen" />
+            <TableColumn fx:id="columestado" prefWidth="104.0" text="Estado" />
+         </columns>
+         <contextMenu>
+            <ContextMenu fx:id="conmenu1">
+               <items>
+                  <MenuItem fx:id="select" mnemonicParsing="false" onAction="#select" text="Seleccionar Examen" />
+               </items>
+            </ContextMenu>
+         </contextMenu>
+      </TableView>
+   </children>
+</AnchorPane>

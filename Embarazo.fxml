@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import Validaciones.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="507.0" prefWidth="769.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.EmbarazoController">
+    <stylesheets>
+        <URL value="@../Estilos/Fondosuave.css" />
+    </stylesheets>
+   <children>
+      <TextField fx:id="Noe" layoutX="10.0" layoutY="39.0" prefHeight="25.0" prefWidth="81.0" />
+      <Label layoutX="11.0" layoutY="14.0" text="No. Expediente" />
+      <Label layoutX="146.0" layoutY="14.0" text="Nombres" />
+      <Label layoutX="335.0" layoutY="14.0" text="Apelidos" />
+      <TextField fx:id="Nombres" layoutX="146.0" layoutY="38.0" prefHeight="25.0" prefWidth="138.0" />
+      <TextField fx:id="apellidos" layoutX="335.0" layoutY="38.0" />
+      <Label layoutX="526.0" layoutY="15.0" text="Semana" />
+      <ComboBox fx:id="Combosemana" layoutX="525.0" layoutY="37.0" prefHeight="25.0" prefWidth="94.0" />
+      <TableView fx:id="tableEmb" editable="true" layoutX="12.0" layoutY="326.0" prefHeight="164.0" prefWidth="742.0">
+        <columns>
+          <TableColumn fx:id="columnoe" prefWidth="104.0" text="No. Expediente" />
+          <TableColumn fx:id="columnom" prefWidth="260.0" text="Nombre Completo" />
+            <TableColumn fx:id="columsem" prefWidth="58.0" text="Semana" />
+            <TableColumn fx:id="columres" prefWidth="134.0" text="Resultado" />
+            <TableColumn fx:id="colummed" prefWidth="185.0" text="Medico" />
+        </columns>
+      </TableView>
+      <Label layoutX="12.0" layoutY="72.0" text="Resultado" />
+      <Label layoutX="181.0" layoutY="72.0" text="Observaciones" />
+      <TextField fx:id="res" layoutX="11.0" layoutY="93.0" />
+      <TextField fx:id="obs" layoutX="181.0" layoutY="93.0" />
+      <Button fx:id="listar" layoutX="665.0" layoutY="86.0" mnemonicParsing="false" onAction="#listar" prefHeight="35.0" prefWidth="94.0" styleClass="btnListar" stylesheets="@../Estilos/Botones.css" text="Listar" />
+      <Button fx:id="buscar" layoutX="563.0" layoutY="88.0" mnemonicParsing="false" onAction="#buscar" prefHeight="35.0" prefWidth="94.0" styleClass="btnbuscar" stylesheets="@../Estilos/Botones.css" text="Buscar" />
+      <Button fx:id="mod" layoutX="458.0" layoutY="88.0" mnemonicParsing="false" onAction="#mod" prefHeight="35.0" prefWidth="94.0" styleClass="btnmodificar" stylesheets="@../Estilos/Botones.css" text="Modificar" />
+      <Button fx:id="add" layoutX="352.0" layoutY="88.0" mnemonicParsing="false" onAction="#add" prefHeight="35.0" prefWidth="94.0" styleClass="btnAgregar" stylesheets="@../Estilos/Botones.css" text="       Agregar" />
+      <Button fx:id="find" layoutX="732.0" layoutY="35.0" mnemonicParsing="false" onAction="#find" prefHeight="25.0" prefWidth="24.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/Find_16x16.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Button fx:id="save" layoutX="664.0" layoutY="38.0" mnemonicParsing="false" onAction="#save" prefHeight="25.0" prefWidth="24.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/Save_24x24.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Button fx:id="cancel" layoutX="698.0" layoutY="36.0" mnemonicParsing="false" onAction="#cancel" prefHeight="25.0" prefWidth="23.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/Cancel_16x16.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <TableView fx:id="tableexa" layoutX="12.0" layoutY="140.0" prefHeight="170.0" prefWidth="742.0">
+         <columns>
+            <TableColumn fx:id="columnoe1" prefWidth="93.0" text="No. Expediente" />
+            <TableColumn fx:id="columnom1" prefWidth="234.0" text="Nombre" />
+            <TableColumn fx:id="columcat" prefWidth="132.0" text="Categoria" />
+            <TableColumn fx:id="columtipo" prefWidth="156.0" text="Tipo de Examen" />
+            <TableColumn fx:id="columestado" prefWidth="125.0" text="Estado" />
+         </columns>
+         <contextMenu>
+            <ContextMenu fx:id="conmenu1">
+               <items>
+                  <MenuItem fx:id="select" mnemonicParsing="false" onAction="#select" text="Seleccionar Examen" />
+               </items>
+            </ContextMenu>
+         </contextMenu>
+      </TableView>
+   </children>
+</AnchorPane>

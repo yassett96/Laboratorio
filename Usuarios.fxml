@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="299.0" prefWidth="643.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.UsuariosController">
+    <stylesheets>
+        <URL value="@../Estilos/Fondosuave.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="tableuser" editable="true" layoutX="23.0" layoutY="84.0" prefHeight="200.0" prefWidth="599.0">
+        <columns>
+          <TableColumn fx:id="columnoc" prefWidth="131.0" text="No. Cedula" />
+            <TableColumn fx:id="columnom" prefWidth="214.0" text="Nombre Completo" />
+            <TableColumn fx:id="columc" prefWidth="83.0" text="Cargo" />
+            <TableColumn fx:id="columuser" prefWidth="170.0" text="Usuario" />
+        </columns>
+         <contextMenu>
+            <ContextMenu fx:id="c1">
+              <items>
+                <MenuItem fx:id="add" mnemonicParsing="false" onAction="#agregar" text="Agregar Usuario" />
+                  <MenuItem fx:id="cancelar" mnemonicParsing="false" onAction="#cancel" text="Cancelar" />
+                  <MenuItem fx:id="list" mnemonicParsing="false" onAction="#listar" text="Listar" />
+                  <MenuItem fx:id="delete" mnemonicParsing="false" onAction="#eliminar" text="Eliminar Usuario" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </TableView>
+      <ComboBox fx:id="c" layoutX="23.0" layoutY="44.0" prefHeight="25.0" prefWidth="180.0" />
+      <Label layoutX="23.0" layoutY="14.0" text="Medico:" />
+      <Label layoutX="233.0" layoutY="14.0" text="Usuario" />
+      <TextField fx:id="u" layoutX="233.0" layoutY="44.0" />
+      <Label layoutX="420.0" layoutY="14.0" text="Contraseña" />
+      <Button fx:id="add2" layoutX="589.0" layoutY="44.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="25.0" prefWidth="33.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/Save_24x24.png" />
+               </source>
+            </ImageInput>
+         </effect></Button>
+      <PasswordField fx:id="con" layoutX="406.0" layoutY="44.0" />
+   </children>
+</AnchorPane>

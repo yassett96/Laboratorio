@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="486.0" prefWidth="721.0" styleClass="backgroundsuave" stylesheets="@../Estilos/FondoBlanco.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.ExamenTipoController">
+   <children>
+      <Button fx:id="btnVarios" layoutX="420.0" layoutY="283.0" mnemonicParsing="false" onAction="#Varios" prefHeight="166.0" prefWidth="208.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/BotonVarios.jpg" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Button fx:id="btnOrina" layoutX="414.0" layoutY="42.0" mnemonicParsing="false" onAction="#Orina" prefHeight="194.0" prefWidth="208.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/BotonOrina.jpg" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Button fx:id="btnHeces" layoutX="67.0" layoutY="287.0" mnemonicParsing="false" onAction="#Heces" prefHeight="166.0" prefWidth="233.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/BotonHeces.jpg" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Button fx:id="btnemb" layoutX="71.0" layoutY="47.0" mnemonicParsing="false" onAction="#Embarazo" prefHeight="194.0" prefWidth="208.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@../Imagenes/BotonEmb.jpg" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Label fx:id="label" layoutX="86.0" layoutY="18.0" text="Examenes de Embarazo">
+         <font>
+            <Font name="Times New Roman" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="433.0" layoutY="19.0" text="Examenes de Orina">
+         <font>
+            <Font name="Times New Roman" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="86.0" layoutY="253.0" text="Examenes de Heces">
+         <font>
+            <Font name="Times New Roman" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="436.0" layoutY="253.0" text="Examenes Varios">
+         <font>
+            <Font name="Times New Roman" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
