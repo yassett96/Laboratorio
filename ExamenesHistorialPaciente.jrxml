@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="612" pageHeight="792" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8e6028b8-93f6-4868-b175-ce3178b722c6">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Title" fontName="Arial" fontSize="26" isBold="true" pdfFontName="Helvetica-Bold"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<style name="Crosstab Data Text" hAlign="Center"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="8cbb2103-a87d-422f-84af-29d6180d6716"/>
+	<parameter name="NoExpediente" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select p.NoExpediente,p.Nombres,p.Apellidos,e.Examen_Tipo,CONCAT(m.Nombre,' ',m.Apellido)
+	 from Examen as e
+	inner join Pacientes as p
+	on e.Id_Paciente=p.Id_Paciente
+	inner join Medicos as m
+	on e.Id_Medico=m.Id_Medico
+	where e.registro='Activo'
+	and e.Estado='Realizado'
+	and p.NoExpediente=$P{NoExpediente}]]>
+	</queryString>
+	<field name="NoExpediente" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Nombres" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Apellidos" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Examen_Tipo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="CONCAT(m.Nombre,&apos; &apos;,m.Apellido)" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="112" splitType="Stretch">
+			<image>
+				<reportElement x="8" y="-10" width="124" height="56" uuid="334b0fca-9886-4f5a-9fbc-81e9b4019cc9"/>
+				<imageExpression><![CDATA["../Reportes/minsa.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement style="Title" x="61" y="13" width="263" height="33" uuid="1e5c4f33-a10f-48f5-8b23-0eba883e7a0d"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Ministerio de Salud]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="SubTitle" x="3" y="45" width="354" height="22" uuid="3bb074be-78fa-49a8-86f5-30328a489f24"/>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[Hospital Nilda Patricia Velazco de Zedillo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="194" y="75" width="223" height="24" uuid="09da9451-6dda-4dc4-ae1a-a2e261ff1074"/>
+				<textElement>
+					<font fontName="Monotype Corsiva" size="18"/>
+				</textElement>
+				<text><![CDATA[Historial del Paciente]]></text>
+			</staticText>
+			<image>
+				<reportElement x="350" y="-19" width="242" height="65" uuid="b8ba1a73-c052-465e-807b-73629621ce6a"/>
+				<imageExpression><![CDATA["../Reportes/logoGob.gif"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="29" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="114" height="20" uuid="ec924578-8c4f-4b23-ab9e-20074d2ee907"/>
+				<text><![CDATA[NoExpediente]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="114" y="0" width="114" height="20" uuid="faa4fa2b-e865-44bd-a668-bba50335d7f2"/>
+				<text><![CDATA[Nombres]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="228" y="0" width="114" height="20" uuid="e71f87e2-c801-40ac-97b1-786c827f8083"/>
+				<text><![CDATA[Apellidos]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="342" y="0" width="114" height="20" uuid="518c431f-dece-4a96-9c03-7e671275c657"/>
+				<text><![CDATA[Tipo de Examen]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="456" y="0" width="114" height="20" uuid="9fafd7a5-d257-4e23-a393-51c2b2e64b71"/>
+				<text><![CDATA[Nombre del Medico]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="27" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="22" width="543" height="1" uuid="3ab16dc8-e140-41c7-b020-b91f9c983fed"/>
+			</line>
+			<textField>
+				<reportElement x="0" y="0" width="114" height="20" uuid="72826178-efe1-44ce-bf41-06318a4ab824"/>
+				<textFieldExpression><![CDATA[$F{NoExpediente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="114" y="0" width="114" height="20" uuid="d8fa5302-d97a-4738-9ffc-4b452c57d659"/>
+				<textFieldExpression><![CDATA[$F{Nombres}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="228" y="0" width="114" height="20" uuid="30efda0c-5f76-479d-acac-cc02b59f8517"/>
+				<textFieldExpression><![CDATA[$F{Apellidos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="342" y="0" width="114" height="20" uuid="fef5bd72-5812-4c12-8212-93fb5d8680e7"/>
+				<textFieldExpression><![CDATA[$F{Examen_Tipo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="456" y="0" width="114" height="20" uuid="34adeb29-90e9-49ec-afca-462307bb3693"/>
+				<textFieldExpression><![CDATA[$F{CONCAT(m.Nombre,' ',m.Apellido)}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement style="Column header" x="433" y="0" width="80" height="20" uuid="856e3ce5-5184-4e7b-abf6-3db67ef90630"/>
+				<textElement textAlignment="Right">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement style="Column header" x="513" y="0" width="40" height="20" uuid="950eeda9-ea5b-4c9c-9951-2c9f5982a309"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement style="Column header" x="0" y="0" width="197" height="20" uuid="b23f76d4-839d-46c7-9040-0a88fa79d773"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement x="216" y="4" width="164" height="50" uuid="d86ef55e-8a16-442f-b14d-2b9f96e25d71"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39" drawText="false" checksumRequired="false">
+					<jr:codeExpression><![CDATA["1234"]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

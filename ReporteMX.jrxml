@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="992167d2-8e67-4b9e-b909-65469c08c742">
+	<property name="ireport.zoom" value="1.948717100000017"/>
+	<property name="ireport.x" value="687"/>
+	<property name="ireport.y" value="27"/>
+	<queryString>
+		<![CDATA[select p.Producto,pp.Nombre as Proveedor,
+	p.Enero,p.Febrero,p.Marzo,p.Abril,p.Mayo,p.Junio,
+	p.Julio,p.Agosto,p.Septiembre,p.Octubre,p.Noviembre,
+	p.Diciembre
+	from Producto as p
+	inner join Proveedores as pp
+	on p.Id_Proveedor=pp.Id_Proveedor]]>
+	</queryString>
+	<field name="Producto" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Proveedor" class="java.lang.String"/>
+	<field name="Enero" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Febrero" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Marzo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Abril" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Mayo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Junio" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Julio" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Agosto" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Septiembre" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Octubre" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Noviembre" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Diciembre" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="62" splitType="Stretch">
+			<image>
+				<reportElement x="-19" y="-17" width="124" height="56" uuid="e1be9dd2-61ba-4c03-91e5-d486cf2079bc"/>
+				<imageExpression><![CDATA["../Reportes/minsa.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="248" y="5" width="242" height="29" uuid="06727fea-db0a-4b36-93b7-beb57c7ca5b1"/>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ministerio de Salud]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="276" y="37" width="200" height="20" uuid="f50b5896-2fca-48f1-a97b-4c8221d51857"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hospital Nilda Patricia Velazco de Zedillo]]></text>
+			</staticText>
+			<image>
+				<reportElement x="561" y="-19" width="242" height="51" uuid="4d1f3ee9-1f89-44ec-9c0e-ce9abde32eea"/>
+				<imageExpression><![CDATA["../Reportes/logoGob.gif"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="28" splitType="Stretch">
+			<staticText>
+				<reportElement x="275" y="-4" width="203" height="20" uuid="58f9aece-5294-4719-8998-d9294ad18a56"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Reporte Mensual de Consumos de RX]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-1" y="27" width="739" height="1" uuid="43411f20-f8a2-4760-b1c9-193c3082c754"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="21" splitType="Stretch">
+			<staticText>
+				<reportElement x="34" y="1" width="42" height="20" uuid="0e3f7eb2-20b7-42aa-979a-5dec29a706c2"/>
+				<text><![CDATA[Producto]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="110" y="1" width="64" height="20" uuid="24a50652-d718-452b-ba91-2c2024c5f4f0"/>
+				<text><![CDATA[  Proveedor]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="175" y="1" width="47" height="20" uuid="c49377d5-f767-4f06-a289-03fca373c2de"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[    Enero]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="281" y="1" width="28" height="16" uuid="bd00ccf7-ddf4-4410-ab9b-e0dd45ea55f2"/>
+				<text><![CDATA[Marzo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="225" y="1" width="44" height="20" uuid="7a6b7a11-6654-43bb-ab04-f9c3c5ab8ff0"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[  Febrero]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="331" y="1" width="21" height="16" uuid="f248e77d-e64a-41e0-9554-c6070a33974d"/>
+				<text><![CDATA[Abril]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="376" y="1" width="26" height="16" uuid="f6d4da4e-3c5d-4f9f-974f-32b460dec3d2"/>
+				<text><![CDATA[Mayo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="417" y="1" width="30" height="17" uuid="920ca29b-8274-4044-9883-318ed52cf430"/>
+				<text><![CDATA[Junio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="460" y="1" width="24" height="16" uuid="e4602bf7-bff0-4cb8-8b7f-2a9efaa43668"/>
+				<text><![CDATA[Julio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="494" y="1" width="33" height="17" uuid="742a5bb2-1b8f-41b0-80f6-f0994b2f587f"/>
+				<text><![CDATA[Agosto]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="532" y="1" width="55" height="20" uuid="889d1144-c47f-4ef0-85b5-fd020c591708"/>
+				<text><![CDATA[Septiembre]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="593" y="2" width="36" height="16" uuid="b59efc4a-cf5a-4949-9f4f-8a622d6722eb"/>
+				<text><![CDATA[Octubre]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="634" y="1" width="60" height="20" uuid="93125c49-fb4f-457b-9f2e-af8c02353b90"/>
+				<text><![CDATA[Noviembre]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="687" y="1" width="54" height="20" uuid="f4d8328f-c347-4a15-88ba-47ab87b3b0d6"/>
+				<text><![CDATA[Diciembre]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-1" y="19" width="738" height="1" uuid="f66a876c-6465-4506-b68b-44f28723028b"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="18" splitType="Stretch">
+			<line>
+				<reportElement x="-1" y="15" width="739" height="2" uuid="5675e8bc-6d31-4207-89b4-009d620370e1"/>
+			</line>
+			<textField>
+				<reportElement x="-1" y="-1" width="109" height="15" uuid="721af85a-07ba-4313-93e9-7af42c6ea0d3"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Producto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="421" y="-1" width="18" height="15" uuid="83ef37db-9fae-465d-861c-fce7aaacbe04"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Junio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="287" y="0" width="19" height="14" uuid="a747d60a-fa39-4054-af93-17dfe9e54314"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Marzo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="109" y="-1" width="69" height="15" uuid="4112cfe5-aca1-4a1c-9ffa-194901d79b27"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Proveedor}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="242" y="0" width="18" height="14" uuid="2bfb990d-98be-44e0-87bb-a25ab075618c"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Febrero}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="197" y="0" width="16" height="14" uuid="ee4c9179-efea-46c5-8d39-9389ca19f91b"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Enero}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="377" y="-1" width="18" height="17" uuid="74a8bd67-e64a-4903-862b-ed1a4ca19087"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Mayo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="463" y="0" width="15" height="14" uuid="91384488-8cca-41ae-9f4b-317548ca6176"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Julio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="500" y="-1" width="18" height="15" uuid="f98dac59-9e85-45f7-8ced-77f4dd77740e"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Agosto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="550" y="0" width="19" height="15" uuid="c4202c6b-8373-4073-a457-233eef722c26"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Septiembre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="603" y="0" width="15" height="15" uuid="af55737e-dd4c-467d-a072-0022792e97bf"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Octubre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="653" y="0" width="14" height="15" uuid="f918e411-0a1b-4449-9b51-2b6f747f2cdb"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Noviembre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="704" y="-1" width="17" height="18" uuid="1741544e-bc59-4b87-a8c0-6e19b977ecf1"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Diciembre}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="-2" y="-1" width="1" height="16" uuid="68ee6fc5-f245-4f62-b69c-4c68a8d97af5"/>
+			</line>
+			<line>
+				<reportElement x="633" y="0" width="1" height="17" uuid="52c34fe5-ed15-4f6b-9d19-2b48836b7a82"/>
+			</line>
+			<line>
+				<reportElement x="108" y="0" width="1" height="15" uuid="905711eb-2c2c-49dd-8673-a6fd307a9b0c"/>
+			</line>
+			<line>
+				<reportElement x="178" y="-1" width="1" height="16" uuid="b2cfcd2c-06c3-4b8a-b5ed-6c11735146e1"/>
+			</line>
+			<line>
+				<reportElement x="226" y="-1" width="1" height="16" uuid="7baf683c-80ed-433a-964c-d272db4816bf"/>
+			</line>
+			<line>
+				<reportElement x="272" y="-1" width="1" height="16" uuid="ab92db55-cda5-41b3-88ed-22169cc330ed"/>
+			</line>
+			<line>
+				<reportElement x="317" y="-1" width="1" height="16" uuid="169a2d7b-1ef3-40e8-9db1-aaaa69e3d7cf"/>
+			</line>
+			<line>
+				<reportElement x="365" y="-1" width="1" height="16" uuid="41140138-f559-4505-a9d1-5aa1db71ab7b"/>
+			</line>
+			<line>
+				<reportElement x="408" y="-1" width="1" height="17" uuid="e944ae8f-e867-470d-8ea6-0cdcf664defc"/>
+			</line>
+			<line>
+				<reportElement x="449" y="-1" width="1" height="17" uuid="8380a654-7914-4945-8be5-4c76a0ccf06b"/>
+			</line>
+			<line>
+				<reportElement x="490" y="-1" width="1" height="17" uuid="aae402c9-1788-48c0-b282-bcbeac6724c5"/>
+			</line>
+			<line>
+				<reportElement x="529" y="-1" width="1" height="17" uuid="5227c879-a953-49c1-9ea5-d7c7be5c0cdf"/>
+			</line>
+			<line>
+				<reportElement x="588" y="-1" width="1" height="17" uuid="1be771c8-3840-4fae-9c35-fa8bddf619cd"/>
+			</line>
+			<line>
+				<reportElement x="685" y="0" width="1" height="17" uuid="d5a0df5e-55e8-45b4-bc59-7f762feb1c44"/>
+			</line>
+			<line>
+				<reportElement x="737" y="-2" width="1" height="17" uuid="5daa45c7-5e19-467d-bb49-0b1e64930a86"/>
+			</line>
+			<line>
+				<reportElement x="-2" y="-22" width="1" height="21" uuid="fb1a7870-29d5-4c18-9535-221e955623f5"/>
+			</line>
+			<line>
+				<reportElement x="108" y="-21" width="1" height="21" uuid="14e2d577-672f-4159-b14e-34072adac5ed"/>
+			</line>
+			<line>
+				<reportElement x="178" y="-21" width="1" height="21" uuid="d334f10a-38bb-4bfd-8a19-dee7fb6887da"/>
+			</line>
+			<line>
+				<reportElement x="226" y="-21" width="1" height="21" uuid="210ffdba-4e54-4ca7-a7d1-30cb33fe8e3d"/>
+			</line>
+			<line>
+				<reportElement x="272" y="-21" width="1" height="21" uuid="5db8e4e3-d192-4467-a656-d96485ef82c5"/>
+			</line>
+			<line>
+				<reportElement x="317" y="-21" width="1" height="21" uuid="15720c0c-5d1b-4b9c-9b1d-dd432e1009f4"/>
+			</line>
+			<line>
+				<reportElement x="365" y="-21" width="1" height="21" uuid="7e1b59f9-e2fe-4956-8ec4-51826f1f7eb2"/>
+			</line>
+			<line>
+				<reportElement x="408" y="-21" width="1" height="21" uuid="4f95751c-1940-46fe-ac83-d0c7c2f0faef"/>
+			</line>
+			<line>
+				<reportElement x="449" y="-21" width="1" height="21" uuid="043955fe-5cf5-420e-a624-8ac5ffb6620e"/>
+			</line>
+			<line>
+				<reportElement x="490" y="-21" width="1" height="21" uuid="bb2a831a-7960-4583-ac58-371ef9417d4e"/>
+			</line>
+			<line>
+				<reportElement x="529" y="-21" width="1" height="21" uuid="305da6d5-b5df-4a41-829e-6a1074d5b666"/>
+			</line>
+			<line>
+				<reportElement x="588" y="-21" width="1" height="21" uuid="7ebccf34-ecdc-4a25-bc2e-072038a2e3b3"/>
+			</line>
+			<line>
+				<reportElement x="633" y="-21" width="1" height="21" uuid="ac9a76a0-9b77-428c-9680-dcef298f8c94"/>
+			</line>
+			<line>
+				<reportElement x="685" y="-20" width="1" height="21" uuid="3a30e691-3872-46aa-a611-87b07d37b585"/>
+			</line>
+			<line>
+				<reportElement x="737" y="-21" width="1" height="21" uuid="5f26d6e0-ce74-47c5-9fd1-006adb380ab4"/>
+			</line>
+			<textField>
+				<reportElement x="333" y="0" width="17" height="17" uuid="cf99297a-b264-41fb-a136-38f333a3de8c"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Abril}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="15" y="34" width="100" height="20" uuid="79b16066-3545-46bb-a138-8c9c0f59642e"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
